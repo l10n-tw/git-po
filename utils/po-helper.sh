@@ -306,6 +306,10 @@ check_po () {
 		then
 			if test -f "$po"
 			then
+				if test -x "$po"
+				then
+					hiecho >&2 "ERROR: bad file mode for $po, should be 0644 instead of 0755"
+				fi
 				mkdir -p "${mo%/*}"
 				msgfmt -o "$mo" --check --statistics "$po"
 				if test -n "${GETTEXT14_PATH}" && test -x "${GETTEXT14_PATH}/msgfmt"
