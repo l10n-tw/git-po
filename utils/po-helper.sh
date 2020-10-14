@@ -436,16 +436,64 @@ show_diff () {
 	fi
 }
 
+skip_commit_meta_info() {
+	commit=$1
+	gpg=
+	IFS=''
+	while read line
+	do
+		if test "$line" = "gpgsig -----BEGIN PGP SIGNATURE-----"
+		then
+			gpg=yes
+			hiecho >&2 "NOTE: commit $c has gpg signature, please verify it using:"
+			echo >&2 "        git log -1 --show-signature $c"
+			continue
+		fi
+
+		if test -n "$gpg"
+		then
+			if test "$line" = " -----END PGP SIGNATURE-----"
+			then
+				gpg=
+			fi
+			continue
+		fi
+
+		if test -z "$line"
+		then
+			break
+		fi
+
+		continue
+	done
+}
+
 verify_commit_encoding () {
 	c=$1
 	subject=0
 	non_ascii=""
 	encoding=""
-	log=""
+	gpg=
 
+	IFS=''
 	while read line
 	do
-		log="$log - $line"
+		# Skip gpgsig
+		if test "$line" = "gpgsig -----BEGIN PGP SIGNATURE-----"
+		then
+			gpg=yes
+			continue
+		fi
+
+		if test -n "$gpg"
+		then
+			if test "$line" = " -----END PGP SIGNATURE-----"
+			then
+				gpg=
+			fi
+			continue
+		fi
+
 		# next line would be the commit log subject line,
 		# if no previous empty line found.
 		if test -z "$line"
@@ -460,6 +508,7 @@ verify_commit_encoding () {
 				encoding=${line#encoding }
 			fi
 		fi
+
 		# non-ascii found in commit log
 		m=$(echo $line | sed -e "s/\([[:alnum:][:space:][:punct:]]\)//g")
 		if test -n "$m"
@@ -479,6 +528,7 @@ verify_commit_encoding () {
 			break
 		fi
 	done
+
 	if test -n "$non_ascii"
 	then
 		if test -z "$encoding"
@@ -494,22 +544,13 @@ verify_commit_encoding () {
 
 verify_commit_log () {
 	c=$1
-	subject=0
+	subject=1
 	subject_lines=0
+
+	skip_commit_meta_info "$c"
 
 	while read line
 	do
-		if test $subject -eq 0
-		then
-			if test -z "$line"
-			then
-				# The first blank line seperate commit object headings
-				# and log messages"
-				subject=$(( subject + 1 ))
-			fi
-			continue
-		fi
-
 		# Subject line should no longger than 50 characters and
 		# should not end with a punctuation.
 		if test $subject -eq 1
@@ -578,35 +619,21 @@ verify_commit_log_sob () {
 
 verify_commit_log_subject () {
 	c=$1
-	subject=0
 
-	while read line
-	do
-		if test $subject -eq 0
-		then
-			if test -z "$line"
-			then
-				# The first blank line seperate commit object headings
-				# and log messages"
-				subject=$(( subject + 1 ))
-			fi
-			continue
-		else
-			if test "$line" = "${line#l10n: }"
-			then
-				hiecho >&2 "Error: commit subject should start with \"l10n: \""
-				echo >&2 "       in commit: $c,"
-				echo >&2 "       subject: \"$line\""
-			fi
-			break
-		fi
-	done
+	skip_commit_meta_info "$c"
+	read line
+	if test "$line" = "${line#l10n: }"
+	then
+		hiecho >&2 "Error: commit subject should start with \"l10n: \""
+		echo >&2 "       in commit: $c,"
+		echo >&2 "       subject: \"$line\""
+	fi
 }
 
 is_merge_commit()
 {
 	c=$1
-	parents=$(git cat-file commit $c | grep "^parent [0-9a-f]\{40\}" | wc -l)
+	parents=$(git cat-file commit $c | grep "^parent [0-9a-f]" | wc -l)
 	if test $parents -ge 2
 	then
 		true
