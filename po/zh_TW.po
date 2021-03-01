@@ -293,7 +293,7 @@ msgstr ""
 "Project-Id-Version: Git\n"
 "Report-Msgid-Bugs-To: Git Mailing List <git@vger.kernel.org>\n"
 "POT-Creation-Date: 2021-02-26 22:09+0800\n"
-"PO-Revision-Date: 2020-12-23 22:30+0800\n"
+"PO-Revision-Date: 2021-03-01 21:48+0800\n"
 "Last-Translator: Yi-Jyun Pan <pan93412@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <zh-l10n@lists.linux.org.tw>\n"
 "Language: zh_TW\n"
@@ -353,7 +353,7 @@ msgstr[0] "已更新 %d 個路徑\n"
 #: add-interactive.c:724 git-add--interactive.perl:676
 #, c-format, perl-format
 msgid "note: %s is untracked now.\n"
-msgstr "註：%s 現已不再追蹤。\n"
+msgstr "注意：%s 現已不再追蹤。\n"
 
 #: add-interactive.c:729 apply.c:4125 builtin/checkout.c:295
 #: builtin/reset.c:145
@@ -1945,7 +1945,7 @@ msgstr "檔案 '%s' 包含錯誤的引用格式：%s"
 #: bisect.c:699
 #, c-format
 msgid "We cannot bisect more!\n"
-msgstr "我們無法進行更多的二分尋找！\n"
+msgstr "我們無法進行更多的二分搜尋！\n"
 
 #: bisect.c:766
 #, c-format
@@ -1987,7 +1987,7 @@ msgid ""
 "Maybe you mistook %s and %s revs?\n"
 msgstr ""
 "一些 %s 版本不是 %s 版本的祖先。\n"
-"這種情況下 git 二分尋找無法正常工作。\n"
+"這種情況下 git 二分搜尋無法正常工作。\n"
 "您可能弄錯了 %s 和 %s 版本？\n"
 
 #: bisect.c:822
@@ -2004,7 +2004,7 @@ msgstr ""
 #: bisect.c:861
 #, c-format
 msgid "Bisecting: a merge base must be tested\n"
-msgstr "二分尋找中：合併基礎必須是經過測試的\n"
+msgstr "二分搜尋中：合併基礎必須是經過測試的\n"
 
 #: bisect.c:911
 #, c-format
@@ -2023,7 +2023,7 @@ msgstr "不能讀取檔案 '%s'"
 
 #: bisect.c:1027
 msgid "reading bisect refs failed"
-msgstr "讀取二分尋找引用失敗"
+msgstr "讀取二分搜尋引用失敗"
 
 #: bisect.c:1057
 #, c-format
@@ -2031,16 +2031,13 @@ msgid "%s was both %s and %s\n"
 msgstr "%s 同時為 %s 和 %s\n"
 
 #: bisect.c:1066
-#, fuzzy, c-format
-#| msgid ""
-#| "No testable commit found.\n"
-#| "Maybe you started with bad path parameters?\n"
+#, c-format
 msgid ""
 "No testable commit found.\n"
 "Maybe you started with bad path arguments?\n"
 msgstr ""
-"沒有發現可測試的提交。\n"
-"可能您在執行時使用了錯誤的路徑參數？\n"
+"沒找到能夠測試的提交。\n"
+"可能是執行傳入的路徑引數是錯誤的？\n"
 
 #: bisect.c:1095
 #, c-format
@@ -2055,7 +2052,7 @@ msgstr[0] "（大概 %d 步）"
 #, c-format
 msgid "Bisecting: %d revision left to test after this %s\n"
 msgid_plural "Bisecting: %d revisions left to test after this %s\n"
-msgstr[0] "二分尋找中：在此之後，還剩 %d 個版本待測試 %s\n"
+msgstr[0] "二分搜尋中：在此之後，還剩 %d 個版本待測試 %s\n"
 
 #: blame.c:2777
 msgid "--contents and --reverse do not blend well."
@@ -2331,17 +2328,15 @@ msgstr "無效的雜湊版本"
 
 #: commit-graph.c:219
 msgid "repository contains replace objects; skipping commit-graph"
-msgstr ""
+msgstr "版本庫有取代物件；跳過提交圖形"
 
 #: commit-graph.c:228
 msgid "repository contains (deprecated) grafts; skipping commit-graph"
-msgstr ""
+msgstr "版本庫有（廢棄的）移植項目；跳過提交圖形"
 
 #: commit-graph.c:233
-#, fuzzy
-#| msgid "source repository is shallow, ignoring --local"
 msgid "repository is shallow; skipping commit-graph"
-msgstr "源版本庫是淺複製，忽略 --local"
+msgstr "版本庫是淺複製；忽略提交圖形"
 
 #: commit-graph.c:264
 msgid "commit-graph file is too small"
@@ -2584,10 +2579,9 @@ msgid ""
 msgstr "提交圖形中提交 %s 的世代號非零，但其它地方是零"
 
 #: commit-graph.c:2662
-#, fuzzy, c-format
-#| msgid "commit-graph generation for commit %s is %u != %u"
+#, c-format
 msgid "commit-graph generation for commit %s is %<PRIuMAX> < %<PRIuMAX>"
-msgstr "提交圖形中的提交 %s 的世代號是 %u != %u"
+msgstr "提交 %s 的提交圖形處於 %<PRIuMAX> < %<PRIuMAX> 世代"
 
 #: commit-graph.c:2668
 #, c-format
@@ -2688,20 +2682,19 @@ msgid "relative config include conditionals must come from files"
 msgstr "相對路徑的設定檔案條件引用必須來自於檔案"
 
 #: config.c:396
-#, fuzzy, c-format
-#| msgid "invalid ref format: %s"
+#, c-format
 msgid "invalid config format: %s"
-msgstr "無效的引用格式：%s"
+msgstr "無效的設定檔格式：%s"
 
 #: config.c:400
 #, c-format
 msgid "missing environment variable name for configuration '%.*s'"
-msgstr ""
+msgstr "缺少「%.*s」組態設定的環境變數名稱"
 
 #: config.c:405
 #, c-format
 msgid "missing environment variable '%s' for configuration '%.*s'"
-msgstr ""
+msgstr "缺少環境變數「%s」（於「%.*s」組態設定）"
 
 #: config.c:442
 #, c-format
@@ -2724,10 +2717,8 @@ msgid "invalid key (newline): %s"
 msgstr "無效鍵名（有換行符號）：%s"
 
 #: config.c:511
-#, fuzzy
-#| msgid "use repository config file"
 msgid "empty config key"
-msgstr "使用版本庫級設定檔案"
+msgstr "空白設定鍵"
 
 #: config.c:529 config.c:541
 #, c-format
@@ -2740,28 +2731,24 @@ msgid "bogus format in %s"
 msgstr "%s 中格式錯誤"
 
 #: config.c:622
-#, fuzzy, c-format
-#| msgid "bogus format in %s"
+#, c-format
 msgid "bogus count in %s"
-msgstr "%s 中格式錯誤"
+msgstr "%s 中有偽計數"
 
 #: config.c:626
-#, fuzzy, c-format
-#| msgid "too many args to run %s"
+#, c-format
 msgid "too many entries in %s"
-msgstr "執行 %s 的參數太多"
+msgstr "%s 中的項目過多"
 
 #: config.c:636
-#, fuzzy, c-format
-#| msgid "invalid config file %s"
+#, c-format
 msgid "missing config key %s"
-msgstr "無效的設定檔案 %s"
+msgstr "缺少 %s 設定鍵"
 
 #: config.c:644
-#, fuzzy, c-format
-#| msgid "missing value for '%s'"
+#, c-format
 msgid "missing config value %s"
-msgstr "%s 的取值缺少"
+msgstr "缺少 %s 設定值"
 
 #: config.c:995
 #, c-format
@@ -2837,10 +2824,9 @@ msgid "bad numeric config value '%s' for '%s' in %s: %s"
 msgstr "在 %3$s 中設定變數 '%2$s' 錯誤的取值 '%1$s'：%4$s"
 
 #: config.c:1194
-#, fuzzy, c-format
-#| msgid "bad numeric config value '%s' for '%s': %s"
+#, c-format
 msgid "bad boolean config value '%s' for '%s'"
-msgstr "設定變數 '%2$s' 的數字取值 '%1$s' 設定錯誤：%3$s"
+msgstr "「%2$s」的「%1$s」布林設定值無效"
 
 #: config.c:1289
 #, c-format
@@ -3161,7 +3147,7 @@ msgstr "未指定路徑，執行 'git help pull' 檢視有效的 url 語法"
 
 #: connect.c:1190
 msgid "newline is forbidden in git:// hosts and repo paths"
-msgstr ""
+msgstr "git:// 主機名稱和版本庫路徑中不能有換行"
 
 #: connect.c:1247
 msgid "ssh variant 'simple' does not support -4"
@@ -4015,22 +4001,16 @@ msgid "control the order in which files appear in the output"
 msgstr "控制輸出中的檔案顯示順序"
 
 #: diff.c:5615 diff.c:5618
-#, fuzzy
-#| msgid "path"
 msgid "<path>"
-msgstr "路徑"
+msgstr "<路徑>"
 
 #: diff.c:5616
-#, fuzzy
-#| msgid "write the pack index file in the specified idx format version"
 msgid "show the change in the specified path first"
-msgstr "用指定的 idx 格式版本來寫包索引檔案"
+msgstr "先顯示指定路徑的變更"
 
 #: diff.c:5619
-#, fuzzy
-#| msgid "Reset current HEAD to the specified state"
 msgid "skip the output to the specified path"
-msgstr "重設目前 HEAD 到指定狀態"
+msgstr ""
 
 #: diff.c:5621
 msgid "<object-id>"
@@ -4082,10 +4062,9 @@ msgid "Performing inexact rename detection"
 msgstr "正在進行非精確的重新命名偵測"
 
 #: diffcore-rotate.c:29
-#, fuzzy, c-format
-#| msgid "no such path %s in %s"
+#, c-format
 msgid "No such path '%s' in the diff"
-msgstr "在 %2$s 中無此路徑 %1$s"
+msgstr "diff 中沒有「%s」路徑"
 
 #: dir.c:578
 #, c-format
@@ -4753,10 +4732,9 @@ msgid "Unable to create '%s.lock': %s"
 msgstr "不能建立 '%s.lock'：%s"
 
 #: ls-refs.c:37
-#, fuzzy, c-format
-#| msgid "invalid value for blame.coloring"
+#, c-format
 msgid "invalid value '%s' for lsrefs.unborn"
-msgstr "設定 blame.coloring 中的無效取值"
+msgstr "lsrefs.unborn 的值「%s」無效"
 
 #: ls-refs.c:167
 msgid "expected flush after ls-refs arguments"
@@ -4778,24 +4756,23 @@ msgid "Failed to merge submodule %s (commits don't follow merge-base)"
 msgstr "無法合併子模組 %s （提交未跟隨合併基礎）"
 
 #: merge-ort.c:883 merge-ort.c:890
-#, fuzzy, c-format
-#| msgid "Fast-forwarding submodule %s"
+#, c-format
 msgid "Note: Fast-forwarding submodule %s to %s"
-msgstr "快轉子模組 %s"
+msgstr "注意：正在將 %s 子模組快轉到 %s"
 
 #: merge-ort.c:911
-#, fuzzy, c-format
-#| msgid "failed to recurse into submodule '%s'"
+#, c-format
 msgid "Failed to merge submodule %s"
-msgstr "遞迴子模組 '%s' 失敗"
+msgstr "無法合併 %s 子模組"
 
 #: merge-ort.c:918
-#, fuzzy, c-format
-#| msgid "Failed to merge submodule %s (multiple merges found)"
+#, c-format
 msgid ""
 "Failed to merge submodule %s, but a possible merge resolution exists:\n"
 "%s\n"
-msgstr "無法合併子模組 %s （發現多個合併）"
+msgstr ""
+"無法合併 %s 子模組，但有找到一個可行的合併方案：\n"
+"%s\n"
 
 #: merge-ort.c:922 merge-recursive.c:1259
 #, c-format
@@ -4814,12 +4791,13 @@ msgstr ""
 "以接受此建議。\n"
 
 #: merge-ort.c:935
-#, fuzzy, c-format
-#| msgid "Failed to merge submodule %s (multiple merges found)"
+#, c-format
 msgid ""
 "Failed to merge submodule %s, but multiple possible merges exist:\n"
 "%s"
-msgstr "無法合併子模組 %s （發現多個合併）"
+msgstr ""
+"無法合併 %s 子模組，但有找到幾個可行的合併方案：\n"
+"%s"
 
 #: merge-ort.c:1094 merge-recursive.c:1341
 msgid "Failed to execute internal merge"
@@ -4948,13 +4926,11 @@ msgstr ""
 
 #: merge-ort.c:2760
 msgid "both"
-msgstr ""
+msgstr "雙方"
 
 #: merge-ort.c:2760
-#, fuzzy
-#| msgid "done"
 msgid "one"
-msgstr "完成"
+msgstr "一方"
 
 #: merge-ort.c:2855 merge-recursive.c:3052
 msgid "content"
@@ -4989,10 +4965,9 @@ msgstr ""
 #. base, and 2-3) the trees for the two trees we're merging.
 #.
 #: merge-ort.c:3354
-#, fuzzy, c-format
-#| msgid "update_ref failed for ref '%s': %s"
+#, c-format
 msgid "collecting merge info failed for trees %s, %s, %s"
-msgstr "對引用 '%s' 執行 update_ref 失敗：%s"
+msgstr "%s, %s, %s 樹的合併資訊收集失敗"
 
 #: merge-ort-wrappers.c:13 merge-recursive.c:3661
 #, c-format
@@ -5774,10 +5749,9 @@ msgid "unable to unpack contents of %s"
 msgstr "無法解壓縮 %s 的內容"
 
 #: object-name.c:486
-#, fuzzy, c-format
-#| msgid "short SHA1 %s is ambiguous"
+#, c-format
 msgid "short object ID %s is ambiguous"
-msgstr "短 SHA1 %s 存在歧義"
+msgstr "短物件 ID %s 存在歧義"
 
 #: object-name.c:497
 msgid "The candidates are:"
@@ -5902,56 +5876,48 @@ msgid "unable to get size of %s"
 msgstr "不能得到 %s 的大小"
 
 #: pack-bitmap.c:1489 builtin/rev-list.c:92
-#, fuzzy, c-format
-#| msgid "unable to get size of %s"
+#, c-format
 msgid "unable to get disk usage of %s"
-msgstr "不能得到 %s 的大小"
+msgstr "無法取得 %s 的磁碟用量"
 
 #: pack-revindex.c:220
-#, fuzzy, c-format
-#| msgid "multi-pack-index file %s is too small"
+#, c-format
 msgid "reverse-index file %s is too small"
-msgstr "多包索引檔案 %s 太小"
+msgstr "%s 倒排索引檔案過小"
 
 #: pack-revindex.c:225
-#, fuzzy, c-format
-#| msgid "index file corrupt"
+#, c-format
 msgid "reverse-index file %s is corrupt"
-msgstr "索引檔案損壞"
+msgstr "%s 倒排索引檔案損壞"
 
 #: pack-revindex.c:233
-#, fuzzy, c-format
-#| msgid "bad index file sha1 signature"
+#, c-format
 msgid "reverse-index file %s has unknown signature"
-msgstr "壞的索引檔案 sha1 簽名"
+msgstr "%s 倒排索引檔案有未知簽章"
 
 #: pack-revindex.c:237
 #, c-format
 msgid "reverse-index file %s has unsupported version %<PRIu32>"
-msgstr ""
+msgstr "倒排索引檔案 %s 有不支援的版本 %<PRIu32>"
 
 #: pack-revindex.c:242
 #, c-format
 msgid "reverse-index file %s has unsupported hash id %<PRIu32>"
-msgstr ""
+msgstr "倒排索引檔案 %s 有不支援的雜湊 ID %<PRIu32>"
 
 #: pack-write.c:236
-#, fuzzy
-#| msgid "cannot read the index"
 msgid "cannot both write and verify reverse index"
-msgstr "無法讀取索引"
+msgstr "無法同時寫入和驗證倒排索引"
 
 #: pack-write.c:257
-#, fuzzy, c-format
-#| msgid "could not stat %s"
+#, c-format
 msgid "could not stat: %s"
-msgstr "不能對 %s 呼叫 stat"
+msgstr "無法 stat：%s"
 
 #: pack-write.c:269
-#, fuzzy, c-format
-#| msgid "failed to parse %s"
+#, c-format
 msgid "failed to make %s readable"
-msgstr "解析 %s 失敗"
+msgstr "無法讓 %s 能夠寫入"
 
 #: pack-write.c:502
 #, fuzzy, c-format
@@ -6280,10 +6246,8 @@ msgid "failed to generate diff"
 msgstr "生成 diff 失敗"
 
 #: range-diff.c:558
-#, fuzzy
-#| msgid "-p and --overlay are mutually exclusive"
 msgid "--left-only and --right-only are mutually exclusive"
-msgstr "-p 和 --overlay 互斥"
+msgstr "--left-only 和 --right-only 互斥"
 
 #: range-diff.c:561 range-diff.c:563
 #, c-format
@@ -6825,40 +6789,33 @@ msgid "malformed format string %s"
 msgstr "錯誤的格式化字串 %s"
 
 #: ref-filter.c:1551
-#, fuzzy, c-format
-#| msgid "no branch, rebasing %s"
+#, c-format
 msgid "(no branch, rebasing %s)"
-msgstr "非分支，正重定基底 %s"
+msgstr "（無分支，重定 %s 的基底）"
 
 #: ref-filter.c:1554
-#, fuzzy, c-format
-#| msgid "no branch, rebasing detached HEAD %s"
+#, c-format
 msgid "(no branch, rebasing detached HEAD %s)"
-msgstr "非分支，正重定基底分離開頭指標 %s"
+msgstr "（無分支，重定 %s 分離開頭指標的基底）"
 
 #: ref-filter.c:1557
-#, fuzzy, c-format
-#| msgid "no branch, bisect started on %s"
+#, c-format
 msgid "(no branch, bisect started on %s)"
-msgstr "非分支，二分尋找開始於 %s"
+msgstr "（無分支，二分搜尋從 %s 開始）"
 
 #: ref-filter.c:1561
-#, fuzzy, c-format
-#| msgid "HEAD detached at "
+#, c-format
 msgid "(HEAD detached at %s)"
-msgstr "開頭指標分離於 "
+msgstr "（開頭指標分離於 %s）"
 
 #: ref-filter.c:1564
-#, fuzzy, c-format
-#| msgid "HEAD detached from "
+#, c-format
 msgid "(HEAD detached from %s)"
-msgstr "開頭指標分離自 "
+msgstr "（開頭指標分離自 %s）"
 
 #: ref-filter.c:1567
-#, fuzzy
-#| msgid "no branch"
 msgid "(no branch)"
-msgstr "非分支"
+msgstr "（無分支）"
 
 #: ref-filter.c:1599 ref-filter.c:1808
 #, c-format
@@ -9467,10 +9424,8 @@ msgid "unable to locate repository; .git is not a file"
 msgstr "無法定位版本庫；.git 不是檔案"
 
 #: worktree.c:737
-#, fuzzy
-#| msgid "unable to locate repository; .git is not a file"
 msgid "unable to locate repository; .git file does not reference a repository"
-msgstr "無法定位版本庫；.git 不是檔案"
+msgstr "無法定位版本庫；.git 檔案未參考版本庫"
 
 #: worktree.c:741
 msgid "unable to locate repository; .git file broken"
@@ -9917,11 +9872,11 @@ msgstr "  （使用 \"git revert --abort\" 以取消反轉提交動作）"
 #: wt-status.c:1476
 #, c-format
 msgid "You are currently bisecting, started from branch '%s'."
-msgstr "您在執行從分支 '%s' 開始的二分尋找動作。"
+msgstr "您在執行從分支 '%s' 開始的二分搜尋動作。"
 
 #: wt-status.c:1480
 msgid "You are currently bisecting."
-msgstr "您在執行二分尋找動作。"
+msgstr "您在執行二分搜尋動作。"
 
 #  譯者：請維持前導空格
 #: wt-status.c:1483
@@ -10088,10 +10043,9 @@ msgid "git add [<options>] [--] <pathspec>..."
 msgstr "git add [<選項>] [--] <路徑規格>..."
 
 #: builtin/add.c:58
-#, fuzzy, c-format
-#| msgid "cannot chdir to '%s'"
+#, c-format
 msgid "cannot chmod %cx '%s'"
-msgstr "不能切換目錄到 '%s'"
+msgstr "無法 chmod %cx ‘%s’"
 
 #: builtin/add.c:96
 #, c-format
@@ -10376,7 +10330,7 @@ msgstr "如果您想要跳過這一修補檔，則執行 \"%s --skip\"。"
 #: builtin/am.c:1091
 #, c-format
 msgid "To restore the original branch and stop patching, run \"%s --abort\"."
-msgstr "若要復原至原始分支並停止修補檔動作，執行 \"%s --abort\"。"
+msgstr "若要復原至原始分支並停止修補動作，執行 \"%s --abort\"。"
 
 #: builtin/am.c:1174
 msgid "Patch sent with format=flowed; space at the end of lines might be lost."
@@ -10414,7 +10368,7 @@ msgstr ""
 
 #: builtin/am.c:1516
 msgid "Falling back to patching base and 3-way merge..."
-msgstr "回落到基礎版本上打修補檔及進行三方合併..."
+msgstr "回落到基礎版本上修補及進行三方合併..."
 
 #: builtin/am.c:1542
 msgid "Failed to merge in the changes."
@@ -10622,16 +10576,12 @@ msgid "skip the current patch"
 msgstr "跳過目前修補檔"
 
 #: builtin/am.c:2287
-#, fuzzy
-#| msgid "restore the original branch and abort the patching operation."
 msgid "restore the original branch and abort the patching operation"
-msgstr "復原原始分支並終止打修補檔動作。"
+msgstr "還原原始分支並中止修補動作"
 
 #: builtin/am.c:2290
-#, fuzzy
-#| msgid "abort the patching operation but keep HEAD where it is."
 msgid "abort the patching operation but keep HEAD where it is"
-msgstr "終止修補檔動作但保持 HEAD 不變。"
+msgstr "終止修補動作但保持 HEAD 不變。"
 
 #: builtin/am.c:2294
 msgid "show the patch being applied"
@@ -10765,16 +10715,14 @@ msgid "git bisect--helper --bisect-state (good|old) [<rev>...]"
 msgstr "git bisect--helper --bisect-state (good|old) [<修訂版>...]"
 
 #: builtin/bisect--helper.c:31
-#, fuzzy
 #| msgid "git bisect--helper --bisect-next"
 msgid "git bisect--helper --bisect-replay <filename>"
-msgstr "git bisect--helper --bisect-next"
+msgstr "git bisect--helper --bisect-replay <檔名>"
 
 #: builtin/bisect--helper.c:32
-#, fuzzy
 #| msgid "git bisect--helper --bisect-state (good|old) [<rev>...]"
 msgid "git bisect--helper --bisect-skip [(<rev>|<range>)...]"
-msgstr "git bisect--helper --bisect-state (good|old) [<修訂版>...]"
+msgstr "git bisect--helper --bisect-skip [(<修訂版>|<範圍>)...]"
 
 #: builtin/bisect--helper.c:107
 #, c-format
@@ -10808,7 +10756,7 @@ msgstr "請使用兩個不同的術語"
 #: builtin/bisect--helper.c:193
 #, c-format
 msgid "We are not bisecting.\n"
-msgstr "我們沒有在二分尋找。\n"
+msgstr "我們沒有在二分搜尋。\n"
 
 #: builtin/bisect--helper.c:201
 #, c-format
@@ -10839,7 +10787,7 @@ msgstr "無法開啟檔案 '%s'"
 #: builtin/bisect--helper.c:297
 #, c-format
 msgid "Invalid command: you're currently in a %s/%s bisect"
-msgstr "無效的指令：您目前正處於一個 %s/%s 二分尋找中"
+msgstr "無效的指令：您目前正處於一個 %s/%s 二分搜尋中"
 
 #: builtin/bisect--helper.c:324
 #, c-format
@@ -10864,7 +10812,7 @@ msgstr ""
 #: builtin/bisect--helper.c:348
 #, c-format
 msgid "bisecting only with a %s commit"
-msgstr "在只有一個 %s 提交的情況下二分尋找"
+msgstr "在只有一個 %s 提交的情況下二分搜尋"
 
 #  譯者：請維持句尾空格
 #. TRANSLATORS: Make sure to include [Y] and [n] in your
@@ -10929,7 +10877,7 @@ msgstr "檢出 '%s' 失敗。嘗試 'git bisect start <有效分支>'。"
 
 #: builtin/bisect--helper.c:732
 msgid "won't bisect on cg-seek'ed tree"
-msgstr "不會在做了 cg-seek 的樹上做二分尋找"
+msgstr "不會在做了 cg-seek 的樹上做二分搜尋"
 
 #: builtin/bisect--helper.c:735
 msgid "bad HEAD - strange symbolic ref"
@@ -10969,23 +10917,22 @@ msgstr "<修訂版> 輸入格式錯誤：%s"
 
 #: builtin/bisect--helper.c:912
 msgid "We are not bisecting."
-msgstr "我們沒有在二分尋找。"
+msgstr "我們沒有在二分搜尋。"
 
 #: builtin/bisect--helper.c:962
-#, fuzzy, c-format
+#, c-format
 #| msgid "?? what are you talking about?"
 msgid "'%s'?? what are you talking about?"
-msgstr "?? 您在說什麼?"
+msgstr "「%s」？？您在說什麼？"
 
 #: builtin/bisect--helper.c:974
-#, fuzzy, c-format
-#| msgid "cannot read $file for replaying"
+#, c-format
 msgid "cannot read file '%s' for replaying"
-msgstr "不能讀取 $file 來重放"
+msgstr "無法讀取「%s」檔案來重放"
 
 #: builtin/bisect--helper.c:1047
 msgid "reset the bisection state"
-msgstr "清除二分尋找狀態"
+msgstr "清除二分搜尋狀態"
 
 #: builtin/bisect--helper.c:1049
 msgid "check whether bad or good terms exist"
@@ -10993,15 +10940,15 @@ msgstr "檢查壞的或好的術語是否存在"
 
 #: builtin/bisect--helper.c:1051
 msgid "print out the bisect terms"
-msgstr "列印二分尋找術語"
+msgstr "列印二分搜尋術語"
 
 #: builtin/bisect--helper.c:1053
 msgid "start the bisect session"
-msgstr "啟動二分尋找過程"
+msgstr "啟動二分搜尋過程"
 
 #: builtin/bisect--helper.c:1055
 msgid "find the next bisection commit"
-msgstr "尋找下一個二分尋找提交"
+msgstr "尋找下一個二分搜尋提交"
 
 #: builtin/bisect--helper.c:1057
 msgid "mark the state of ref (or refs)"
@@ -11011,17 +10958,15 @@ msgstr "標記 ref (或 refs) 的狀態"
 #, fuzzy
 #| msgid "reset the bisection state"
 msgid "list the bisection steps so far"
-msgstr "清除二分尋找狀態"
+msgstr "清除二分搜尋狀態"
 
 #: builtin/bisect--helper.c:1061
 msgid "replay the bisection process from the given file"
 msgstr ""
 
 #: builtin/bisect--helper.c:1063
-#, fuzzy
-#| msgid "the branch or commit to checkout"
 msgid "skip some commits for checkout"
-msgstr "要檢出的分支或提交"
+msgstr "跳過要檢出的部分提交"
 
 #: builtin/bisect--helper.c:1065
 msgid "no log for BISECT_WRITE"
@@ -11044,14 +10989,11 @@ msgid "--bisect-next requires 0 arguments"
 msgstr "--bisect-next 需要 0 個引數"
 
 #: builtin/bisect--helper.c:1111
-#, fuzzy
 #| msgid "--bisect-next requires 0 arguments"
 msgid "--bisect-log requires 0 arguments"
-msgstr "--bisect-next 需要 0 個引數"
+msgstr "--bisect-log 需要 0 個引數"
 
 #: builtin/bisect--helper.c:1116
-#, fuzzy
-#| msgid "No logfile given"
 msgid "no logfile given"
 msgstr "未提供日誌檔案"
 
@@ -11093,22 +11035,16 @@ msgid "show blame entries as we find them, incrementally"
 msgstr "增量式地顯示發現的 blame 條目"
 
 #: builtin/blame.c:868
-#, fuzzy
-#| msgid "Do not show object names of boundary commits (Default: off)"
 msgid "do not show object names of boundary commits (Default: off)"
-msgstr "不要顯示邊界提交的物件名稱 (預設值: off)"
+msgstr "不要顯示邊界提交的物件名稱（預設值: off）"
 
 #: builtin/blame.c:869
-#, fuzzy
-#| msgid "Do not treat root commits as boundaries (Default: off)"
 msgid "do not treat root commits as boundaries (Default: off)"
-msgstr "不把根提交作為邊界（預設：關閉）"
+msgstr "不將根提交看作邊界（預設值：off）"
 
 #: builtin/blame.c:870
-#, fuzzy
-#| msgid "Show work cost statistics"
 msgid "show work cost statistics"
-msgstr "顯示指令消耗統計"
+msgstr "顯示工作量統計"
 
 #: builtin/blame.c:871 builtin/checkout.c:1503 builtin/clone.c:92
 #: builtin/commit-graph.c:84 builtin/commit-graph.c:222 builtin/fetch.c:175
@@ -11124,16 +11060,12 @@ msgid "show output score for blame entries"
 msgstr "顯示判斷 blame 條目位移的得分診斷訊息"
 
 #: builtin/blame.c:873
-#, fuzzy
-#| msgid "Show original filename (Default: auto)"
 msgid "show original filename (Default: auto)"
-msgstr "顯示原始檔案名（預設：自動）"
+msgstr "顯示原始檔案名稱（預設值：auto）"
 
 #: builtin/blame.c:874
-#, fuzzy
-#| msgid "Show original linenumber (Default: off)"
 msgid "show original linenumber (Default: off)"
-msgstr "顯示原始的行號（預設：關閉）"
+msgstr "顯示原始檔案名稱（預設值：off）"
 
 #: builtin/blame.c:875
 #, fuzzy
@@ -11148,38 +11080,26 @@ msgid "show porcelain format with per-line commit information"
 msgstr "為每一行顯示機器適用的提交訊息"
 
 #: builtin/blame.c:877
-#, fuzzy
-#| msgid "Use the same output mode as git-annotate (Default: off)"
 msgid "use the same output mode as git-annotate (Default: off)"
-msgstr "使用和 git-annotate 相同的輸出模式（預設：關閉）"
+msgstr "使用和 git-annotate 相同的輸出模式（預設值：off）"
 
 #: builtin/blame.c:878
-#, fuzzy
-#| msgid "Show raw timestamp (Default: off)"
 msgid "show raw timestamp (Default: off)"
-msgstr "顯示原始時間戳（預設：關閉）"
+msgstr "顯示原始時間戳（預設值：off）"
 
 #: builtin/blame.c:879
-#, fuzzy
-#| msgid "Show long commit SHA1 (Default: off)"
 msgid "show long commit SHA1 (Default: off)"
-msgstr "顯示長的 SHA1 提交號（預設：關閉）"
+msgstr "顯示較長的 SHA1 提交編號（預設值：off）"
 
 #: builtin/blame.c:880
-#, fuzzy
-#| msgid "Suppress author name and timestamp (Default: off)"
 msgid "suppress author name and timestamp (Default: off)"
-msgstr "隱藏作者名字和時間戳（預設：關閉）"
+msgstr "隱藏作者名字及時間戳（預設值：off）"
 
 #: builtin/blame.c:881
-#, fuzzy
-#| msgid "Show author email instead of name (Default: off)"
 msgid "show author email instead of name (Default: off)"
-msgstr "顯示作者的信箱而不是名字（預設：關閉）"
+msgstr "顯示作者信箱而非名稱（預設值：off）"
 
 #: builtin/blame.c:882
-#, fuzzy
-#| msgid "Ignore whitespace differences"
 msgid "ignore whitespace differences"
 msgstr "忽略空白差異"
 
@@ -11188,16 +11108,12 @@ msgid "rev"
 msgstr "版本"
 
 #: builtin/blame.c:883
-#, fuzzy
-#| msgid "Ignore <rev> when blaming"
 msgid "ignore <rev> when blaming"
-msgstr "在執行 blame 動作時忽略 <版本>"
+msgstr "在執行 blame 動作時忽略 <修訂版>"
 
 #: builtin/blame.c:884
-#, fuzzy
-#| msgid "Ignore revisions from <file>"
 msgid "ignore revisions from <file>"
-msgstr "忽略來自 <檔案> 中的版本"
+msgstr "忽略 <檔案> 中的修訂版"
 
 #: builtin/blame.c:885
 msgid "color redundant metadata from previous line differently"
@@ -11208,14 +11124,10 @@ msgid "color lines by age"
 msgstr "依據時間著色"
 
 #: builtin/blame.c:887
-#, fuzzy
-#| msgid "Spend extra cycles to find better match"
 msgid "spend extra cycles to find better match"
-msgstr "花費額外的循環來找到更好的符合"
+msgstr "循環更多次以找到更佳符合"
 
 #: builtin/blame.c:888
-#, fuzzy
-#| msgid "Use revisions from <file> instead of calling git-rev-list"
 msgid "use revisions from <file> instead of calling git-rev-list"
 msgstr "使用來自 <檔案> 的修訂集而不是呼叫 git-rev-list"
 
@@ -11397,7 +11309,7 @@ msgstr "分支 %s 正被重定基底到 %s"
 #: builtin/branch.c:494
 #, c-format
 msgid "Branch %s is being bisected at %s"
-msgstr "分支 %s 正被二分尋找於 %s"
+msgstr "分支 %s 正被二分搜尋於 %s"
 
 #: builtin/branch.c:511
 msgid "cannot copy the current branch while not on any."
@@ -12362,7 +12274,7 @@ msgstr ""
 
 #: builtin/checkout.c:1411
 msgid "you are switching branch while bisecting"
-msgstr "您在執行二分尋找時切換分支"
+msgstr "您在執行二分搜尋時切換分支"
 
 #: builtin/checkout.c:1418
 msgid "paths cannot be used with switching branches"
@@ -13645,14 +13557,15 @@ msgstr "模式"
 
 #: builtin/commit.c:1383 builtin/commit.c:1541
 msgid "show untracked files, optional modes: all, normal, no. (Default: all)"
-msgstr "顯示未追蹤的檔案，「模式」的可選參數：all、normal、no。（預設：all）"
+msgstr "顯示未追蹤的檔案，「模式」的可選參數：all、normal、no。（預設值：all）"
 
 #: builtin/commit.c:1387
 msgid ""
 "show ignored files, optional modes: traditional, matching, no. (Default: "
 "traditional)"
 msgstr ""
-"顯示已忽略的檔案，可選模式：traditional、matching、no。（預設：traditional）"
+"顯示已忽略的檔案，可選模式：traditional、matching、no。（預設值："
+"traditional）"
 
 #: builtin/commit.c:1389 parse-options.h:192
 msgid "when"
@@ -13663,7 +13576,7 @@ msgid ""
 "ignore changes to submodules, optional when: all, dirty, untracked. "
 "(Default: all)"
 msgstr ""
-"忽略子模組的更改，「何時」的可選參數：all、dirty、untracked。（預設：all）"
+"忽略子模組的更改，「何時」的可選參數：all、dirty、untracked。（預設值：all）"
 
 #: builtin/commit.c:1392
 msgid "list untracked files in columns"
@@ -14318,7 +14231,7 @@ msgstr "只輸出精確符合"
 
 #: builtin/describe.c:564
 msgid "consider <n> most recent tags (default: 10)"
-msgstr "考慮最近 <n> 個標籤（預設：10）"
+msgstr "考慮最近 <n> 個標籤（預設值：10）"
 
 #: builtin/describe.c:566
 msgid "only consider tags matching <pattern>"
@@ -14338,11 +14251,11 @@ msgstr "標記"
 
 #: builtin/describe.c:572
 msgid "append <mark> on dirty working tree (default: \"-dirty\")"
-msgstr "對於髒工作區，追加 <標記>（預設：\"-dirty\"）"
+msgstr "對於髒工作區，追加 <標記>（預設值：”-dirty\"）"
 
 #: builtin/describe.c:575
 msgid "append <mark> on broken working tree (default: \"-broken\")"
-msgstr "對於損壞的工作區，追加 <標記>（預設：\"-broken\"）"
+msgstr "對於損壞的工作區，追加 <標記>（預設值：”-broken\"）"
 
 #: builtin/describe.c:593
 msgid "--long is incompatible with --abbrev=0"
@@ -17730,7 +17643,7 @@ msgstr "自動合併進展順利，按要求在提交前停止\n"
 
 #: builtin/mktag.c:10
 msgid "git mktag"
-msgstr ""
+msgstr "git mktag"
 
 #: builtin/mktag.c:30
 #, fuzzy, c-format
@@ -17741,12 +17654,12 @@ msgstr "警告：不支援 `:include:`：%s\n"
 #: builtin/mktag.c:41
 #, c-format
 msgid "error: tag input does not pass fsck: %s"
-msgstr ""
+msgstr "錯誤：標籤輸入未通過 fsck：%s"
 
 #: builtin/mktag.c:44
 #, c-format
 msgid "%d (FSCK_IGNORE?) should never trigger this callback"
-msgstr ""
+msgstr "%d (FSCK_IGNORE?) 不應觸發這個回呼函式"
 
 #: builtin/mktag.c:59
 #, fuzzy, c-format
@@ -17762,7 +17675,7 @@ msgstr "物件 %s 是一個 %s，不是一個 %s"
 
 #: builtin/mktag.c:99
 msgid "tag on stdin did not pass our strict fsck check"
-msgstr ""
+msgstr "stdin 上的標籤未通過我們的嚴格 fsck 檢查"
 
 #: builtin/mktag.c:102
 #, fuzzy
@@ -18380,6 +18293,7 @@ msgid ""
 "write_reuse_object: could not locate %s, expected at offset %<PRIuMAX> in "
 "pack %s"
 msgstr ""
+"write_reuse_object：無法定位 %1$s，預期在 %3$s 包中的 %2$<PRIuMAX> 偏移量"
 
 #: builtin/pack-objects.c:448
 #, c-format
@@ -23277,7 +23191,7 @@ msgstr "只能在建立新分支時使用 --[no-]track 選項"
 
 #: builtin/worktree.c:680
 msgid "show extended annotations and reasons, if available"
-msgstr ""
+msgstr "如果有則顯示延伸的註釋和原因"
 
 #: builtin/worktree.c:682
 #, fuzzy
@@ -23870,7 +23784,7 @@ msgstr "基於命名過的樹建立檔案封存"
 
 #: command-list.h:56
 msgid "Use binary search to find the commit that introduced a bug"
-msgstr "透過二分尋找定位引入 bug 的提交"
+msgstr "透過二分搜尋定位引入 bug 的提交"
 
 #: command-list.h:57
 msgid "Show what revision and author last modified each line of a file"
@@ -24485,7 +24399,7 @@ msgstr "忽略指定的未追蹤檔案"
 
 #: command-list.h:209
 msgid "Map author/committer names and/or E-Mail addresses"
-msgstr ""
+msgstr "映射作者或提交者的名稱和（或）電子信箱地址"
 
 #: command-list.h:210
 msgid "Defining submodule properties"
@@ -24525,7 +24439,7 @@ msgstr "Git 推薦的工作流概覽"
 
 #: git-bisect.sh:68
 msgid "bisect run failed: no command provided."
-msgstr "二分尋找執行失敗：沒有提供指令。"
+msgstr "二分搜尋執行失敗：沒有提供指令。"
 
 #: git-bisect.sh:73
 #, sh-format
@@ -24538,12 +24452,12 @@ msgid ""
 "bisect run failed:\n"
 "exit code $res from '$command' is < 0 or >= 128"
 msgstr ""
-"二分尋找執行失敗：\n"
+"二分搜尋執行失敗：\n"
 "指令 '$command' 的離開碼 $res 小於 0 或大於等於 128"
 
 #: git-bisect.sh:105
 msgid "bisect run cannot continue any more"
-msgstr "二分尋找不能繼續執行"
+msgstr "二分搜尋不能繼續執行"
 
 #: git-bisect.sh:111
 #, sh-format
@@ -24551,12 +24465,12 @@ msgid ""
 "bisect run failed:\n"
 "'bisect-state $state' exited with error code $res"
 msgstr ""
-"二分尋找執行失敗：\n"
+"二分搜尋執行失敗：\n"
 "‘bisect-state $state’ 結束，錯誤碼 $res"
 
 #: git-bisect.sh:118
 msgid "bisect run success"
-msgstr "二分尋找執行成功"
+msgstr "二分搜尋執行成功"
 
 #: git-merge-octopus.sh:46
 msgid ""
