@@ -32,7 +32,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: Git Mailing List <git@vger.kernel.org>\n"
 "POT-Creation-Date: 2026-06-26 12:08+0800\n"
 "PO-Revision-Date: 2026-06-27 09:15+0000\n"
-"Last-Translator: Yi-Jyun Pan <pan93412@gmail.com>\n"
+"Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Chinese (Traditional Han script) <https://weblate.slat.org/"
 "projects/git-po/git-cli/zh_Hant/>\n"
 "Language: zh_TW\n"
@@ -3370,8 +3370,7 @@ msgstr "設定 '%s' 的取值未知：%s"
 msgid ""
 "option diff-algorithm accepts \"myers\", \"minimal\", \"patience\" and "
 "\"histogram\""
-msgstr ""
-"diff-algorithm 選項有 \"myers\"、\"minimal\"、\"patience\" 和 \"histogram\""
+msgstr "diff-algorithm 選項有 \"myers\"、\"minimal\"、\"patience\" 和 \"histogram\""
 
 #: builtin/blame.c
 #, c-format
@@ -5826,8 +5825,8 @@ msgid ""
 "           [--] [<pathspec>...]"
 msgstr ""
 "git commit [-a | --interactive | --patch] [-s] [-v] [-u[<mode>]] [--amend]\n"
-"           [--dry-run] [(-c | -C | --squash) <commit> | --fixup [(amend|"
-"reword):]<commit>]\n"
+"           [--dry-run] [(-c | -C | --squash) <commit> | --fixup ["
+"(amend|reword):]<commit>]\n"
 "           [-F <file> | -m <msg>] [--reset-author] [--allow-empty]\n"
 "           [--allow-empty-message] [--no-verify] [-e] [--author=<author>]\n"
 "           [--date=<date>] [--cleanup=<mode>] [--[no-]status]\n"
@@ -6211,8 +6210,8 @@ msgid ""
 "show ignored files, optional modes: traditional, matching, no. (Default: "
 "traditional)"
 msgstr ""
-"顯示已忽略的檔案，可選模式：traditional、matching、no。（預設值："
-"traditional）"
+"顯示已忽略的檔案，可選模式：traditional、matching、no。（預設值：traditional"
+"）"
 
 #: builtin/commit.c parse-options.h
 msgid "when"
@@ -6222,8 +6221,7 @@ msgstr "何時"
 msgid ""
 "ignore changes to submodules, optional when: all, dirty, untracked. "
 "(Default: all)"
-msgstr ""
-"忽略子模組的更改，「何時」的可選參數：all、dirty、untracked。（預設值：all）"
+msgstr "忽略子模組的更改，「何時」的可選參數：all、dirty、untracked。（預設值：all）"
 
 #: builtin/commit.c
 msgid "list untracked files in columns"
@@ -6927,8 +6925,8 @@ msgid ""
 "\n"
 "\tchmod 0700 %s"
 msgstr ""
-"您的 socket 目錄權限過於寬鬆，其他使用者可能會讀取您快取的認證訊息。考慮執"
-"行：\n"
+"您的 socket 目錄權限過於寬鬆，其他使用者可能會讀取您快取的認證訊息。考慮執行"
+"：\n"
 "\n"
 "\tchmod 0700 %s"
 
@@ -9329,8 +9327,7 @@ msgstr "有太多無法取得的鬆散物件，執行「git prune」刪除它們
 #: builtin/gc.c
 msgid ""
 "git maintenance run [--auto] [--[no-]quiet] [--task=<task>] [--schedule]"
-msgstr ""
-"git maintenance run [--auto] [--[no-]quiet] [--task=<作業>] [--schedule]"
+msgstr "git maintenance run [--auto] [--[no-]quiet] [--task=<作業>] [--schedule]"
 
 #: builtin/gc.c
 msgid "--no-schedule is not allowed"
@@ -11377,8 +11374,7 @@ msgstr "在稀疏索引存在時顯示稀疏目錄"
 msgid ""
 "--format cannot be used with -s, -o, -k, -t, --resolve-undo, --deduplicate, "
 "--eol"
-msgstr ""
-"--format 無法和 -s、-o、-k、-t、--resolve-undo、--deduplicate、--eol 一起使用"
+msgstr "--format 無法和 -s、-o、-k、-t、--resolve-undo、--deduplicate、--eol 一起使用"
 
 #: builtin/ls-remote.c
 msgid ""
@@ -12871,8 +12867,7 @@ msgstr "write_reuse_object：無法解析 %s 的物件標頭"
 msgid ""
 "write_reuse_object: could not locate %s, expected at offset %<PRIuMAX> in "
 "pack %s"
-msgstr ""
-"write_reuse_object：無法定位 %1$s，預期在 %3$s 包中的 %2$<PRIuMAX> 偏移量"
+msgstr "write_reuse_object：無法定位 %1$s，預期在 %3$s 包中的 %2$<PRIuMAX> 偏移量"
 
 #: builtin/pack-objects.c
 #, c-format
@@ -16001,8 +15996,7 @@ msgstr "git reset [-q] [<樹或提交>] [--] <路徑規格>..."
 #: builtin/reset.c
 msgid ""
 "git reset [-q] [--pathspec-from-file [--pathspec-file-nul]] [<tree-ish>]"
-msgstr ""
-"git reset [-q] [--pathspec-from-file [--pathspec-file-nul]] [<樹或提交>]"
+msgstr "git reset [-q] [--pathspec-from-file [--pathspec-file-nul]] [<樹或提交>]"
 
 #: builtin/reset.c
 msgid "git reset --patch [<tree-ish>] [--] [<pathspec>...]"
@@ -17631,8 +17625,7 @@ msgstr "取消註冊所有子模組"
 #: builtin/submodule--helper.c
 msgid ""
 "git submodule deinit [--quiet] [-f | --force] [--all | [--] [<path>...]]"
-msgstr ""
-"git submodule deinit [--quiet] [-f | --force] [--all | [--] [<路徑>...]]"
+msgstr "git submodule deinit [--quiet] [-f | --force] [--all | [--] [<路徑>...]]"
 
 #: builtin/submodule--helper.c
 msgid "Use '--all' if you really want to deinitialize all submodules"
@@ -23365,8 +23358,7 @@ msgstr "姓名中僅包含停用字元：%s"
 
 #: imap-send.c
 msgid "git imap-send [-v] [-q] [--[no-]curl] [(--folder|-f) <folder>] < <mbox>"
-msgstr ""
-"git imap-send [-v] [-q] [--[no-]curl] [(--folder|-f) <folder>] < <mbox>"
+msgstr "git imap-send [-v] [-q] [--[no-]curl] [(--folder|-f) <folder>] < <mbox>"
 
 #: imap-send.c
 msgid "no IMAP host specified"
@@ -23667,8 +23659,7 @@ msgstr "警告：避免套用 %s -> %s 的重新命名到 %s，因為 %s 本身�
 msgid ""
 "Path updated: %s added in %s inside a directory that was renamed in %s; "
 "moving it to %s."
-msgstr ""
-"路徑已更新：%s 新增到 %s，位於一個被重新命名到 %s 的目錄中，將其移動到 %s。"
+msgstr "路徑已更新：%s 新增到 %s，位於一個被重新命名到 %s 的目錄中，將其移動到 %s。"
 
 #: merge-ort.c
 #, c-format
@@ -23701,8 +23692,8 @@ msgstr ""
 #, c-format
 msgid "CONFLICT (rename/rename): %s renamed to %s in %s and to %s in %s."
 msgstr ""
-"衝突（重新命名/重新命名）：%1$s 已重新命名為 %3$s 中的 %2$s 和 %5$s 中的 "
-"%4$s。"
+"衝突（重新命名/重新命名）：%1$s 已重新命名為 %3$s 中的 %2$s 和 %5$s 中的 %4$s"
+"。"
 
 #: merge-ort.c
 #, c-format
@@ -23717,8 +23708,7 @@ msgstr ""
 #: merge-ort.c
 #, c-format
 msgid "CONFLICT (rename/delete): %s renamed to %s in %s, but deleted in %s."
-msgstr ""
-"衝突（重新命名/刪除）：%1$s 已重新命名為 %3$s 中的 %2$s 卻在 %4$s 中被刪除。"
+msgstr "衝突（重新命名/刪除）：%1$s 已重新命名為 %3$s 中的 %2$s 卻在 %4$s 中被刪除。"
 
 #: merge-ort.c
 #, c-format
