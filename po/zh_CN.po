@@ -175,15 +175,16 @@ msgstr ""
 "Project-Id-Version: Git\n"
 "Report-Msgid-Bugs-To: Git Mailing List <git@vger.kernel.org>\n"
 "POT-Creation-Date: 2026-04-10 10:05+0800\n"
-"PO-Revision-Date: 2025-11-16 01:03+0800\n"
-"Last-Translator: Teng Long <dyroneteng@gmail.com>\n"
-"Language-Team: GitHub <https://github.com/dyrone/git/>\n"
+"PO-Revision-Date: 2026-06-27 09:14+0000\n"
+"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"Language-Team: Chinese (Simplified Han script) <https://weblate.slat.org/"
+"projects/git-po/git-cli/zh_Hans/>\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Gtranslator 42.0\n"
+"X-Generator: Weblate 2026.5\n"
 
 #: builtin/fast-import.c
 msgid "aborting due to invalid signature"
@@ -1236,8 +1237,7 @@ msgstr "无法在补丁 %s:%d 处找到文件名"
 #: apply.c
 #, c-format
 msgid "git apply: bad git-diff - expected /dev/null, got %s at %s:%d"
-msgstr ""
-"git apply：错误的 git-diff - 期望 /dev/null，但在 %2$s:%3$d 处得到 %1$s"
+msgstr "git apply：错误的 git-diff - 期望 /dev/null，但在 %2$s:%3$d 处得到 %1$s"
 
 #: apply.c
 #, c-format
@@ -1920,8 +1920,7 @@ msgstr "git archive [<选项>] <树对象> [<路径>...]"
 #: archive.c
 msgid ""
 "git archive --remote <repo> [--exec <cmd>] [<options>] <tree-ish> [<path>...]"
-msgstr ""
-"git archive --remote <仓库> [--exec <命令>] [<选项>] <树对象> [<路径>...]"
+msgstr "git archive --remote <仓库> [--exec <命令>] [<选项>] <树对象> [<路径>...]"
 
 #: archive.c
 msgid "git archive --remote <repo> [--exec <cmd>] --list"
@@ -2397,8 +2396,8 @@ msgstr ""
 "%s\n"
 "这一般是个配置错误。\n"
 "\n"
-"如果要支持设置跟踪分支，请保证不同远程的获取引用规格映射至不同的跟踪命名空"
-"间。"
+"如果要支持设置跟踪分支，请保证不同远程的获取引用规格映射至不同的跟踪命名空间"
+"。"
 
 #: branch.c
 #, c-format
@@ -4044,8 +4043,7 @@ msgstr "HEAD 没有位于 refs/heads 之下！"
 msgid ""
 "branch with --recurse-submodules can only be used if "
 "submodule.propagateBranches is enabled"
-msgstr ""
-"带有 --recurse-submodules 的分支只能在 submodule.propagateBranches 启用时使用"
+msgstr "带有 --recurse-submodules 的分支只能在 submodule.propagateBranches 启用时使用"
 
 #: builtin/branch.c
 msgid "--recurse-submodules can only be used to create branches"
@@ -4511,14 +4509,12 @@ msgstr "<类型> <对象> 模式只允许两个参数，而不是 %d 个"
 msgid ""
 "git check-attr [--source <tree-ish>] [-a | --all | <attr>...] [--] "
 "<pathname>..."
-msgstr ""
-"git check-attr [--source <树对象>] [-a | --all | <属性>...] [--] <路径名>..."
+msgstr "git check-attr [--source <树对象>] [-a | --all | <属性>...] [--] <路径名>..."
 
 #: builtin/check-attr.c
 msgid ""
 "git check-attr --stdin [-z] [--source <tree-ish>] [-a | --all | <attr>...]"
-msgstr ""
-"git check-attr --stdin [-z] [--source <树对象>] [-a | --all | <属性>...]"
+msgstr "git check-attr --stdin [-z] [--source <树对象>] [-a | --all | <属性>...]"
 
 #: builtin/check-attr.c
 msgid "report all attributes set on file"
@@ -5131,8 +5127,7 @@ msgstr "git checkout：--detach 不接收路径参数 '%s'"
 msgid ""
 "git checkout: --ours/--theirs, --force and --merge are incompatible when\n"
 "checking out of the index."
-msgstr ""
-"git checkout：在从索引检出时，--ours/--theirs、--force 和 --merge 不兼容。"
+msgstr "git checkout：在从索引检出时，--ours/--theirs、--force 和 --merge 不兼容。"
 
 #: builtin/checkout.c
 msgid "you must specify path(s) to restore"
@@ -5203,8 +5198,7 @@ msgstr "使用叠加模式"
 msgid ""
 "git clean [-d] [-f] [-i] [-n] [-q] [-e <pattern>] [-x | -X] [--] "
 "[<pathspec>...]"
-msgstr ""
-"git clean [-d] [-f] [-i] [-n] [-q] [-e <模式>] [-x | -X] [--] [<路径规格>...]"
+msgstr "git clean [-d] [-f] [-i] [-n] [-q] [-e <模式>] [-x | -X] [--] [<路径规格>...]"
 
 #: builtin/clean.c builtin/sparse-checkout.c
 #, c-format
@@ -5829,8 +5823,8 @@ msgstr ""
 "git commit-graph write [--object-dir <目录>] [--append]\n"
 "                       [--split[=<策略>]] [--reachable | --stdin-packs | --"
 "stdin-commits]\n"
-"                       [--changed-paths] [--[no-]max-new-filters <n>] [--"
-"[no-]progress]\n"
+"                       [--changed-paths] [--[no-]max-new-filters <n>] [--[no-"
+"]progress]\n"
 "                       <切分选项>"
 
 #: builtin/commit-graph.c builtin/fetch.c builtin/gc.c builtin/log.c
@@ -6003,8 +5997,8 @@ msgid ""
 "           [--] [<pathspec>...]"
 msgstr ""
 "git commit [-a | --interactive | --patch] [-s] [-v] [-u[<模式>]] [--amend]\n"
-"           [--dry-run] [(-c | -C | --squash) <提交> | --fixup [(amend|"
-"reword):]<提交>]\n"
+"           [--dry-run] [(-c | -C | --squash) <提交> | --fixup [(amend|reword)"
+":]<提交>]\n"
 "           [-F <文件> | -m <消息>] [--reset-author] [--allow-empty]\n"
 "           [--allow-empty-message] [--no-verify] [-e] [--author=<作者>]\n"
 "           [--date=<日期>] [--cleanup=<模式>] [--[no-]status]\n"
@@ -6382,8 +6376,7 @@ msgstr "显示未跟踪的文件，“模式”的可选参数：all、normal、
 msgid ""
 "show ignored files, optional modes: traditional, matching, no. (Default: "
 "traditional)"
-msgstr ""
-"显示已忽略的文件，可选模式：traditional、matching、no。（默认：traditional）"
+msgstr "显示已忽略的文件，可选模式：traditional、matching、no。（默认：traditional）"
 
 #: builtin/commit.c parse-options.h
 msgid "when"
@@ -6393,8 +6386,7 @@ msgstr "何时"
 msgid ""
 "ignore changes to submodules, optional when: all, dirty, untracked. "
 "(Default: all)"
-msgstr ""
-"忽略子模组的更改，“何时”的可选参数：all、dirty、untracked。（默认：all）"
+msgstr "忽略子模组的更改，“何时”的可选参数：all、dirty、untracked。（默认：all）"
 
 #: builtin/commit.c
 msgid "list untracked files in columns"
@@ -6616,8 +6608,7 @@ msgstr ""
 msgid ""
 "git config unset [<file-option>] [--all] [--value=<pattern>] [--fixed-value] "
 "<name>"
-msgstr ""
-"git config unset [<文件选项>] [--all] [--value=<模式>] [--fixed-value] <名称>"
+msgstr "git config unset [<文件选项>] [--all] [--value=<模式>] [--fixed-value] <名称>"
 
 #: builtin/config.c
 msgid "git config rename-section [<file-option>] <old-name> <new-name>"
@@ -7078,8 +7069,8 @@ msgid ""
 "\n"
 "\tchmod 0700 %s"
 msgstr ""
-"您的 socket 目录权限过于宽松，其他用户可能会读取您缓存的认证信息。考虑执"
-"行：\n"
+"您的 socket 目录权限过于宽松，其他用户可能会读取您缓存的认证信息。考虑执行"
+"：\n"
 "\n"
 "\tchmod 0700 %s"
 
@@ -7103,8 +7094,7 @@ msgstr "无法在 %d ms 获得凭证存储锁"
 #: builtin/describe.c
 msgid ""
 "git describe [--all] [--tags] [--contains] [--abbrev=<n>] [<commit-ish>...]"
-msgstr ""
-"git describe [--all] [--tags] [--contains] [--abbrev=<n>] [<提交号>...]"
+msgstr "git describe [--all] [--tags] [--contains] [--abbrev=<n>] [<提交号>...]"
 
 #: builtin/describe.c
 msgid ""
@@ -7612,8 +7602,7 @@ msgstr "遇到已签名标签 %s；使用 --signed-tags=<模式> 来处理"
 msgid ""
 "tag %s tags unexported object; use --tag-of-filtered-object=<mode> to handle "
 "it"
-msgstr ""
-"标签 %s 指向未导出的对象；使用 --tag-of-filtered-object=<模式> 来处理它"
+msgstr "标签 %s 指向未导出的对象；使用 --tag-of-filtered-object=<模式> 来处理它"
 
 #: builtin/fast-export.c
 msgid "cannot export nested tags unless --mark-tags is specified."
@@ -9439,8 +9428,7 @@ msgstr "手工维护参见 \"git help gc\"。\n"
 #, c-format
 msgid ""
 "gc is already running on machine '%s' pid %<PRIuMAX> (use --force if not)"
-msgstr ""
-"已经有一个 gc 正运行在机器 '%s' pid %<PRIuMAX>（如果不是，使用 --force）"
+msgstr "已经有一个 gc 正运行在机器 '%s' pid %<PRIuMAX>（如果不是，使用 --force）"
 
 #: builtin/gc.c
 msgid ""
@@ -9450,8 +9438,7 @@ msgstr "有太多不可达的松散对象，运行 'git prune' 删除它们。"
 #: builtin/gc.c
 msgid ""
 "git maintenance run [--auto] [--[no-]quiet] [--task=<task>] [--schedule]"
-msgstr ""
-"git maintenance run [--auto] [--[no-]quiet] [--task=<任务>] [--schedule]"
+msgstr "git maintenance run [--auto] [--[no-]quiet] [--task=<任务>] [--schedule]"
 
 #: builtin/gc.c
 msgid "--no-schedule is not allowed"
@@ -10148,16 +10135,15 @@ msgid ""
 "git history split <commit> [--dry-run] [--update-refs=(branches|head)] [--] "
 "[<pathspec>...]"
 msgstr ""
-"git history split <提交> [--dry-run] [--update-refs=(branches|head)] [--] [<"
-"路径规格>...]"
+"git history split <提交> [--dry-run] [--update-refs=(branches|head)] [--] "
+"[<路径规格>...]"
 
 #: builtin/history.c
 #, c-format
 msgid ""
 "Please enter the commit message for the %s changes. Lines starting\n"
 "with '%s' will be ignored, and an empty message aborts the commit.\n"
-msgstr ""
-"请输入针对 %s 变更的提交说明。以 '%s' 开头的行将被忽略，空说明将中止提交。\n"
+msgstr "请输入针对 %s 变更的提交说明。以 '%s' 开头的行将被忽略，空说明将中止提交。\n"
 
 #: builtin/history.c
 #, c-format
@@ -10276,14 +10262,13 @@ msgid ""
 "git hook run [--allow-unknown-hook-name] [--ignore-missing] [--to-"
 "stdin=<path>] <hook-name> [-- <hook-args>]"
 msgstr ""
-"git hook run [--allow-unknown-hook-name] [--ignore-missing] [--to-stdin=<路径"
-">] <钩子名称> [-- <钩子参数>]"
+"git hook run [--allow-unknown-hook-name] [--ignore-missing] [--to-stdin=<路"
+"径>] <钩子名称> [-- <钩子参数>]"
 
 #: builtin/hook.c
 msgid ""
 "git hook list [--allow-unknown-hook-name] [-z] [--show-scope] <hook-name>"
-msgstr ""
-"git hook list [--allow-unknown-hook-name] [-z] [--show-scope] <钩子名称>"
+msgstr "git hook list [--allow-unknown-hook-name] [-z] [--show-scope] <钩子名称>"
 
 #: builtin/hook.c
 msgid "use NUL as line terminator"
@@ -10584,8 +10569,7 @@ msgstr "无法将本地对象提供给 pack-objects"
 
 #: builtin/index-pack.c
 msgid "index-pack: Expecting full hex object ID lines only from pack-objects."
-msgstr ""
-"index-pack：期望仅从 pack-objects 的输出行中获得完整的十六进制对象 ID。"
+msgstr "index-pack：期望仅从 pack-objects 的输出行中获得完整的十六进制对象 ID。"
 
 #: builtin/index-pack.c
 msgid "could not finish pack-objects to repack local links"
@@ -12395,8 +12379,8 @@ msgid ""
 "| -C) <object>] [<object>] [-e]"
 msgstr ""
 "git notes [--ref <注解引用>] add [-f] [--allow-empty] [--[no-]separator|--"
-"separator=<分段符>] [--[no-]stripspace] [-m <说明> | -F <文件> | (-c | -C) <"
-"对象>] [<对象>] [-e]"
+"separator=<分段符>] [--[no-]stripspace] [-m <说明> | -F <文件> | (-c | -C) "
+"<对象>] [<对象>] [-e]"
 
 #: builtin/notes.c
 msgid "git notes [--ref <notes-ref>] copy [-f] <from-object> <to-object>"
@@ -12409,8 +12393,8 @@ msgid ""
 "| -C) <object>] [<object>] [-e]"
 msgstr ""
 "git notes [--ref <注解引用>] append [--allow-empty] [--[no-]separator|--"
-"separator=<分段符>] [--[no-]stripspace] [-m <说明> | -F <文件> | (-c | -C) <"
-"对象>] [<对象>] [-e]"
+"separator=<分段符>] [--[no-]stripspace] [-m <说明> | -F <文件> | (-c | -C) "
+"<对象>] [<对象>] [-e]"
 
 #: builtin/notes.c
 msgid "git notes [--ref <notes-ref>] edit [--allow-empty] [<object>]"
@@ -12814,8 +12798,7 @@ msgstr "当前，--write-bitmap-index 要求 --name-hash-version=1"
 msgid ""
 "write_reuse_object: could not locate %s, expected at offset %<PRIuMAX> in "
 "pack %s"
-msgstr ""
-"write_reuse_object：无法定位 %1$s，预期在包 %3$s 中的偏移量 %2$<PRIuMAX> 上"
+msgstr "write_reuse_object：无法定位 %1$s，预期在包 %3$s 中的偏移量 %2$<PRIuMAX> 上"
 
 #: builtin/pack-objects.c
 #, c-format
@@ -13737,8 +13720,7 @@ msgstr "无法推送一些引用到 '%s'"
 msgid ""
 "recursing into submodule with push.recurseSubmodules=only; using on-demand "
 "instead"
-msgstr ""
-"在 push.recurseSubmodules=only 时递归进入子模组；取而代之使用 on-demand"
+msgstr "在 push.recurseSubmodules=only 时递归进入子模组；取而代之使用 on-demand"
 
 #: builtin/push.c builtin/send-pack.c submodule-config.c
 #, c-format
@@ -14011,14 +13993,13 @@ msgid ""
 "git rebase [-i] [options] [--exec <cmd>] [--onto <newbase> | --keep-base] "
 "[<upstream> [<branch>]]"
 msgstr ""
-"git rebase [-i] [options] [--exec <命令>] [--onto <新基线> | --keep-base] [<"
-"上游> [<分支>]]"
+"git rebase [-i] [options] [--exec <命令>] [--onto <新基线> | --keep-base] "
+"[<上游> [<分支>]]"
 
 #: builtin/rebase.c
 msgid ""
 "git rebase [-i] [options] [--exec <cmd>] [--onto <newbase>] --root [<branch>]"
-msgstr ""
-"git rebase [-i] [选项] [--exec <命令>] [--onto <新基线>] --root [<分支>]"
+msgstr "git rebase [-i] [选项] [--exec <命令>] [--onto <新基线>] --root [<分支>]"
 
 #: builtin/rebase.c sequencer.c
 #, c-format
@@ -14581,8 +14562,8 @@ msgid ""
 msgstr ""
 "git reflog expire [--expire=<时间>] [--expire-unreachable=<时间>]\n"
 "                  [--rewrite] [--updateref] [--stale-fix]\n"
-"                  [--dry-run | -n] [--verbose] [--all [--single-worktree] | <"
-"引用>...]"
+"                  [--dry-run | -n] [--verbose] [--all [--single-worktree] | "
+"<引用>...]"
 
 #: builtin/reflog.c
 #, c-format
@@ -15751,8 +15732,7 @@ msgstr "必须指定 --onto、--advance 或 --revert 之一"
 msgid ""
 "some rev walking options will be overridden as '%s' bit in 'struct rev_info' "
 "will be forced"
-msgstr ""
-"一些版本遍历选项将被覆盖，如 'struct rev_info' 中的 '%s' 位将被强制设定"
+msgstr "一些版本遍历选项将被覆盖，如 'struct rev_info' 中的 '%s' 位将被强制设定"
 
 #: builtin/repo.c
 #, c-format
@@ -15875,8 +15855,7 @@ msgstr "正在引用计数"
 #: builtin/rerere.c
 msgid ""
 "git rerere [clear | forget <pathspec>... | diff | status | remaining | gc]"
-msgstr ""
-"git rerere [clear | forget <路径规格>... | diff | status | remaining | gc]"
+msgstr "git rerere [clear | forget <路径规格>... | diff | status | remaining | gc]"
 
 #: builtin/rerere.c
 msgid "register clean resolutions in index"
@@ -16161,8 +16140,7 @@ msgstr "未知的 --show-object-format 模式：%s"
 msgid ""
 "git revert [--[no-]edit] [-n] [-m <parent-number>] [-s] [-S[<keyid>]] "
 "<commit>..."
-msgstr ""
-"git revert [--[no-]edit] [-n] [-m <父编号>] [-s] [-S[<私钥 ID>]] <提交>..."
+msgstr "git revert [--[no-]edit] [-n] [-m <父编号>] [-s] [-S[<私钥 ID>]] <提交>..."
 
 #: builtin/revert.c
 msgid "git revert (--continue | --skip | --abort | --quit)"
@@ -16782,8 +16760,7 @@ msgstr "指定目录而不是模式。若你的目录以 '!' 开头，传入 --s
 msgid ""
 "specify directories rather than patterns.  If your directory really has any "
 "of '*?[]\\' in it, pass --skip-checks"
-msgstr ""
-"指定目录而不是模式。若你的目录真的包含 '*?[]\\' 中的字符，传入 --skip-checks"
+msgstr "指定目录而不是模式。若你的目录真的包含 '*?[]\\' 中的字符，传入 --skip-checks"
 
 #: builtin/sparse-checkout.c
 #, c-format
@@ -16894,8 +16871,8 @@ msgid ""
 "git stash show [-u | --include-untracked | --only-untracked] [<diff-"
 "options>] [<stash>]"
 msgstr ""
-"git stash show [-u | --include-untracked | --only-untracked] [<差异选项>] [<"
-"储藏>]"
+"git stash show [-u | --include-untracked | --only-untracked] [<差异选项>] "
+"[<储藏>]"
 
 #: builtin/stash.c
 msgid "git stash drop [-q | --quiet] [<stash>]"
@@ -16923,8 +16900,8 @@ msgid ""
 "--quiet]\n"
 "          [-u | --include-untracked] [-a | --all] [<message>]"
 msgstr ""
-"git stash save [-p | --patch] [-S | --staged] [-k | --[no-]keep-index] [-q | "
-"--quiet]\n"
+"git stash save [-p | --patch] [-S | --staged] [-k | --[no-]keep-index] [-q "
+"| --quiet]\n"
 "          [-u | --include-untracked] [-a | --all] [<消息>]"
 
 #: builtin/stash.c
@@ -17300,8 +17277,8 @@ msgid ""
 "ensure it is set, for example by running something like: 'git config "
 "submodule.%s.gitdir .git/modules/%s'"
 msgstr ""
-"无法为 'submodule.%s.gitdir' 设置有效的默认配置。请确保已设置，例如运行类"
-"似：'git config submodule.%s.gitdir .git/modules/%s'"
+"无法为 'submodule.%s.gitdir' 设置有效的默认配置。请确保已设置，例如运行类似"
+"：'git config submodule.%s.gitdir .git/modules/%s'"
 
 #: builtin/submodule--helper.c
 #, c-format
@@ -17503,8 +17480,7 @@ msgstr "将所有子模组取消注册"
 #: builtin/submodule--helper.c
 msgid ""
 "git submodule deinit [--quiet] [-f | --force] [--all | [--] [<path>...]]"
-msgstr ""
-"git submodule deinit [--quiet] [-f | --force] [--all | [--] [<路径>...]]"
+msgstr "git submodule deinit [--quiet] [-f | --force] [--all | [--] [<路径>...]]"
 
 #: builtin/submodule--helper.c
 msgid "Use '--all' if you really want to deinitialize all submodules"
@@ -18436,15 +18412,13 @@ msgstr "索引版本：从 %d 设置为 %d"
 msgid ""
 "core.splitIndex is set to false; remove or change it, if you really want to "
 "enable split index"
-msgstr ""
-"core.splitIndex 被设置为 false。如果您确实要启用索引拆分，请删除或修改它。"
+msgstr "core.splitIndex 被设置为 false。如果您确实要启用索引拆分，请删除或修改它。"
 
 #: builtin/update-index.c
 msgid ""
 "core.splitIndex is set to true; remove or change it, if you really want to "
 "disable split index"
-msgstr ""
-"core.splitIndex 被设置为 true。如果您确实要禁用索引拆分，请删除或修改它。"
+msgstr "core.splitIndex 被设置为 true。如果您确实要禁用索引拆分，请删除或修改它。"
 
 #: builtin/update-index.c
 msgid ""
@@ -21167,8 +21141,7 @@ msgstr "如果使用 %2$s 编码，禁止在 '%1$s' 中使用 BOM"
 msgid ""
 "The file '%s' contains a byte order mark (BOM). Please use UTF-%.*s as "
 "working-tree-encoding."
-msgstr ""
-"文件 '%s' 包含一个字节顺序标记（BOM）。请使用 UTF-%.*s 作为工作区编码。"
+msgstr "文件 '%s' 包含一个字节顺序标记（BOM）。请使用 UTF-%.*s 作为工作区编码。"
 
 #: convert.c
 #, c-format
@@ -21760,8 +21733,7 @@ msgstr "对于差异中的上下文、旧的和新的行，加亮显示错误的
 msgid ""
 "do not munge pathnames and use NULs as output field terminators in --raw or "
 "--numstat"
-msgstr ""
-"在 --raw 或者 --numstat 中，不对路径名转码并使用 NUL 字符作为输出字段的分隔符"
+msgstr "在 --raw 或者 --numstat 中，不对路径名转码并使用 NUL 字符作为输出字段的分隔符"
 
 #: diff.c
 msgid "<prefix>"
@@ -23139,8 +23111,7 @@ msgstr "姓名中仅包含禁用字符：%s"
 
 #: imap-send.c
 msgid "git imap-send [-v] [-q] [--[no-]curl] [(--folder|-f) <folder>] < <mbox>"
-msgstr ""
-"git imap-send [-v] [-q] [--[no-]curl] [(--folder|-f) <文件夹>] < <mbox>"
+msgstr "git imap-send [-v] [-q] [--[no-]curl] [(--folder|-f) <文件夹>] < <mbox>"
 
 #: imap-send.c
 msgid "no IMAP host specified"
@@ -23439,8 +23410,7 @@ msgstr "警告：避免应用 %s -> %s 的重命名到 %s，因为 %s 本身已�
 msgid ""
 "Path updated: %s added in %s inside a directory that was renamed in %s; "
 "moving it to %s."
-msgstr ""
-"路径已更新：%s 添加到 %s，位于一个被重命名到 %s 的目录中，将其移动到 %s。"
+msgstr "路径已更新：%s 添加到 %s，位于一个被重命名到 %s 的目录中，将其移动到 %s。"
 
 #: merge-ort.c
 #, c-format
@@ -23448,8 +23418,8 @@ msgid ""
 "Path updated: %s renamed to %s in %s, inside a directory that was renamed in "
 "%s; moving it to %s."
 msgstr ""
-"路径已更新：%1$s 在 %3$s 中被重命名为 %2$s，而其所在目录又在 %4$s 中被重命"
-"名，因此将其移动到 %5$s。"
+"路径已更新：%1$s 在 %3$s 中被重命名为 %2$s，而其所在目录又在 %4$s 中被重命名"
+"，因此将其移动到 %5$s。"
 
 #: merge-ort.c
 #, c-format
@@ -23472,8 +23442,7 @@ msgstr ""
 #: merge-ort.c
 #, c-format
 msgid "CONFLICT (rename/rename): %s renamed to %s in %s and to %s in %s."
-msgstr ""
-"冲突（重命名/重命名）：%1$s 重命名为 %3$s 中的 %2$s，以及在 %5$s 中的 %4$s。"
+msgstr "冲突（重命名/重命名）：%1$s 重命名为 %3$s 中的 %2$s，以及在 %5$s 中的 %4$s。"
 
 #: merge-ort.c
 #, c-format
@@ -23522,8 +23491,8 @@ msgid ""
 "CONFLICT (distinct types): %s had different types on each side; renamed one "
 "of them so each can be recorded somewhere."
 msgstr ""
-"冲突（不同类型）：%s 在两侧类型不同，已重命名其中之一，以便两者都能记录在某"
-"处。"
+"冲突（不同类型）：%s 在两侧类型不同，已重命名其中之一，以便两者都能记录在某处"
+"。"
 
 #: merge-ort.c
 msgid "content"
@@ -27247,8 +27216,7 @@ msgstr "指定如何调整后台维护"
 msgid ""
 "scalar reconfigure [--maintenance=(enable|disable|keep)] [--all | "
 "<enlistment>]"
-msgstr ""
-"scalar reconfigure [--maintenance=(enable|disable|keep)] [--all | <登记>]"
+msgstr "scalar reconfigure [--maintenance=(enable|disable|keep)] [--all | <登记>]"
 
 #: scalar.c
 msgid "--all or <enlistment>, but not both"
@@ -28983,8 +28951,8 @@ msgid ""
 "submodule.%s.gitdir .git/modules/%s'. For details see the "
 "extensions.submodulePathConfig documentation."
 msgstr ""
-"模块 '%2$s' 缺少 'submodule.%1$s.gitdir' 配置。请确保已设置，例如运行类"
-"似：'git config submodule.%3$s.gitdir .git/modules/%4$s'。详细信息请参见 "
+"模块 '%2$s' 缺少 'submodule.%1$s.gitdir' 配置。请确保已设置，例如运行类似"
+"：'git config submodule.%3$s.gitdir .git/modules/%4$s'。详细信息请参见 "
 "extensions.submodulePathConfig 文档。"
 
 #: submodule.c
