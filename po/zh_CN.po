@@ -4,179 +4,180 @@
 # Copyright (C) 2021-2023 Fangyi Zhou <me@fangyi.io>
 # This file is distributed under the same license as the Git package.
 # Contributors:
-#   - Fangyi Zhou <me AT fangyi.io>
-#   - Jiang Xin <worldhello.net AT gmail.com>
-#   - Lian Cheng <rhythm.mail AT gmail.com>
-#   - Ray Chen <oldsharp AT gmail.com>
-#   - Riku <lu.riku AT gmail.com>
-#   - Thynson <lanxingcan AT gmail.com>
-#   - ws3389 <willsmith3389 AT gmail.com>
-#   - Wang Sheng <wangsheng2008love AT 163.com>
-#   - 依云 <lilydjwg AT gmail.com>
-#   - Yichao Yu <yyc1992 AT gmail.com>
-#   - Zhuang Ya <zhuangya AT me.com>
-#   - Teng Long <dyroneteng AT gmail.com>
+# - Fangyi Zhou <me AT fangyi.io>
+# - Jiang Xin <worldhello.net AT gmail.com>
+# - Lian Cheng <rhythm.mail AT gmail.com>
+# - Ray Chen <oldsharp AT gmail.com>
+# - Riku <lu.riku AT gmail.com>
+# - Thynson <lanxingcan AT gmail.com>
+# - ws3389 <willsmith3389 AT gmail.com>
+# - Wang Sheng <wangsheng2008love AT 163.com>
+# - 依云 <lilydjwg AT gmail.com>
+# - Yichao Yu <yyc1992 AT gmail.com>
+# - Zhuang Ya <zhuangya AT me.com>
+# - Teng Long <dyroneteng AT gmail.com>
 #
 # Git glossary for Chinese translators
 #
-#   English                          |  Chinese
-#   ---------------------------------+--------------------------------------
-#   3-way merge                      |  三路合并
-#   abbreviate                       |  简写（的 SHA-1 值）
-#   alternate object database        |  备用对象库
-#   attribute source                 |  属性来源
-#   amend                            |  修订
-#   ancestor                         |  祖先，祖先提交
-#   annotated tag                    |  附注标签
-#   bare repository                  |  纯仓库
-#   bisect                           |  二分查找
-#   bitmap                           |  位图
-#   blob object                      |  数据对象
-#   bloom filter                     |  布隆过滤器
-#   branch                           |  分支
-#   bundle                           |  捆绑包
-#   bypass                           |  绕过
-#   cache                            |  缓存（索引的别称）
-#   chain                            |  （提交）链
-#   changeset                        |  变更集
-#   checkout                         |  检出
-#   checksum                         |  校验，校验和
-#   cherry-picking                   |  拣选
-#   clean                            |  干净（的工作区）
-#   clone                            |  克隆
-#   commit                           |  提交
-#   commit message                   |  提交说明
-#   commit object                    |  提交对象
-#   commit-graph                     |  提交图
-#   commit-ish (also committish)     |  提交号
-#   cone                             |  锥形模式（稀疏检出）；锥（稀疏检出）
-#   conflict                         |  冲突
-#   core Git                         |  核心 Git 工具
-#   cover letter                     |  附函
-#   cruft pack                       |  废弃包
-#   DAG                              |  有向无环图
-#   dangling object                  |  悬空对象
-#   detached HEAD                    |  分离头指针
-#   directory                        |  目录
-#   dirty                            |  脏（的工作区）
-#   dumb HTTP protocol               |  哑 HTTP 协议
-#   enlistment                       |  登记（在 scalar 中使用）
-#   evil merge                       |  恶意合并（合并引入了额外变更，即父提交没有的修改）
-#   fast-forward                     |  快进
-#   fetch                            |  获取
-#   file system                      |  文件系统
-#   fork                             |  派生
-#   Git archive                      |  仓库（对于 arch 用户）
-#   gitfile                          |  gitfile（仓库链接文件）
-#   grafts                           |  （提交）嫁接
-#   hash                             |  哈希值
-#   HEAD                             |  HEAD（头指针，亦即当前分支）
-#   heap                             |  堆
-#   head                             |  头、分支
-#   head ref                         |  分支
-#   header                           |  头信息
-#   hook                             |  钩子
-#   index                            |  索引
-#   index entry                      |  索引条目
-#   loose object                     |  松散对象
-#   loose refs                       |  松散引用
-#   magic                            |  魔法前缀（路径规格支持的一种前缀表达式）
-#   master                           |  master（传统默认分支名，将被 main 替代）
-#   merge                            |  合并
-#   merge-base                       |  合并基线
-#   note                             |  注解
-#   object                           |  对象
-#   object database                  |  对象库
-#   object identifier                |  对象标识符
-#   object name                      |  对象名称
-#   object type                      |  对象类型
-#   octopus                          |  章鱼式合并（两分支以上的合并）
-#   origin                           |  origin（默认的远程名称）
-#   orphan                           |  孤立（一般指孤立分支，即没有任何提交的分支）
-#   pack                             |  包
-#   pack index                       |  包索引
-#   packfile                         |  包文件
-#   parent                           |  父提交
-#   partial clone                    |  部分克隆
-#   patch                            |  补丁
-#   patch hunk                       |  补丁块
-#   pathspec                         |  路径规格
-#   pattern                          |  模式
-#   pickaxe                          |  挖掘
-#   plumbing                         |  管件（Git 底层命令的别称）
-#   porcelain                        |  瓷件（Git 高层命令的别称）
-#   precious-objects repo            |  珍品仓库
-#   preferred pack                   |  首选包（多包索引中引入的首选包概念）
-#   promisor                         |  承诺者
-#   prune                            |  清除
-#   pseudorefs                       |  伪引用
-#   pull                             |  拉，拉取
-#   push                             |  推，推送
-#   reachable                        |  可达
-#   rebase                           |  变基
-#   ref                              |  引用
-#   reflog                           |  引用日志
-#   refmap                           |  引用映射
-#   refspec                          |  引用规格
-#   regular file                     |  普通文件
-#   remote                           |  远程，远程仓库
-#   remote-tracking branch           |  远程跟踪分支
-#   replay                           |  重放
-#   repo                             |  仓库
-#   repository                       |  仓库
-#   resolve                          |  （冲突）解决
-#   revert                           |  还原
-#   revision                         |  版本
-#   rewind                           |  回退
-#   SCM                              |  源代码管理（工具）
-#   SHA-1                            |  SHA-1（安全哈希算法1）
-#   shallow repository               |  浅（克隆）仓库
-#   signed tag                       |  签名标签
-#   smart HTTP protocol              |  智能 HTTP 协议
-#   squash                           |  挤压
-#   stack                            |  栈
-#   stage                            |  n. 暂存区（即索引）; v. 暂存
-#   stale                            |  过期的
-#   stash                            |  n. 储藏区; v. 储藏
-#   submodule                        |  子模组
-#   symref                           |  符号引用
-#   tag                              |  n. 标签; v. 打标签
-#   tag object                       |  标签对象
-#   tagger                           |  打标签者
-#   topic branch                     |  主题分支
-#   track                            |  跟踪
-#   trailer                          |  尾注
-#   tree                             |  树（工作区或树对象）
-#   tree object                      |  树对象
-#   tree-ish (also treeish)          |  树对象（或可以解析为一树对象）
-#   unmerged index                   |  未合并索引
-#   unpack                           |  解包
-#   unreachable object               |  不可达对象
-#   unstage                          |  取消暂存
-#   upstream                         |  上游（分支/仓库）
-#   working tree/worktree            |  工作区
+# English                          |  Chinese
+# ---------------------------------+--------------------------------------
+# 3-way merge                      |  三路合并
+# abbreviate                       |  简写（的 SHA-1 值）
+# alternate object database        |  备用对象库
+# attribute source                 |  属性来源
+# amend                            |  修订
+# ancestor                         |  祖先，祖先提交
+# annotated tag                    |  附注标签
+# bare repository                  |  纯仓库
+# bisect                           |  二分查找
+# bitmap                           |  位图
+# blob object                      |  数据对象
+# bloom filter                     |  布隆过滤器
+# branch                           |  分支
+# bundle                           |  捆绑包
+# bypass                           |  绕过
+# cache                            |  缓存（索引的别称）
+# chain                            |  （提交）链
+# changeset                        |  变更集
+# checkout                         |  检出
+# checksum                         |  校验，校验和
+# cherry-picking                   |  拣选
+# clean                            |  干净（的工作区）
+# clone                            |  克隆
+# commit                           |  提交
+# commit message                   |  提交说明
+# commit object                    |  提交对象
+# commit-graph                     |  提交图
+# commit-ish (also committish)     |  提交号
+# cone                             |  锥形模式（稀疏检出）；锥（稀疏检出）
+# conflict                         |  冲突
+# core Git                         |  核心 Git 工具
+# cover letter                     |  附函
+# cruft pack                       |  废弃包
+# DAG                              |  有向无环图
+# dangling object                  |  悬空对象
+# detached HEAD                    |  分离头指针
+# directory                        |  目录
+# dirty                            |  脏（的工作区）
+# dumb HTTP protocol               |  哑 HTTP 协议
+# enlistment                       |  登记（在 scalar 中使用）
+# evil merge                       |  恶意合并（合并引入了额外变更，即父提交没有的修改）
+# fast-forward                     |  快进
+# fetch                            |  获取
+# file system                      |  文件系统
+# fork                             |  派生
+# Git archive                      |  仓库（对于 arch 用户）
+# gitfile                          |  gitfile（仓库链接文件）
+# grafts                           |  （提交）嫁接
+# hash                             |  哈希值
+# HEAD                             |  HEAD（头指针，亦即当前分支）
+# heap                             |  堆
+# head                             |  头、分支
+# head ref                         |  分支
+# header                           |  头信息
+# hook                             |  钩子
+# index                            |  索引
+# index entry                      |  索引条目
+# loose object                     |  松散对象
+# loose refs                       |  松散引用
+# magic                            |  魔法前缀（路径规格支持的一种前缀表达式）
+# master                           |  master（传统默认分支名，将被 main 替代）
+# merge                            |  合并
+# merge-base                       |  合并基线
+# note                             |  注解
+# object                           |  对象
+# object database                  |  对象库
+# object identifier                |  对象标识符
+# object name                      |  对象名称
+# object type                      |  对象类型
+# octopus                          |  章鱼式合并（两分支以上的合并）
+# origin                           |  origin（默认的远程名称）
+# orphan                           |  孤立（一般指孤立分支，即没有任何提交的分支）
+# pack                             |  包
+# pack index                       |  包索引
+# packfile                         |  包文件
+# parent                           |  父提交
+# partial clone                    |  部分克隆
+# patch                            |  补丁
+# patch hunk                       |  补丁块
+# pathspec                         |  路径规格
+# pattern                          |  模式
+# pickaxe                          |  挖掘
+# plumbing                         |  管件（Git 底层命令的别称）
+# porcelain                        |  瓷件（Git 高层命令的别称）
+# precious-objects repo            |  珍品仓库
+# preferred pack                   |  首选包（多包索引中引入的首选包概念）
+# promisor                         |  承诺者
+# prune                            |  清除
+# pseudorefs                       |  伪引用
+# pull                             |  拉，拉取
+# push                             |  推，推送
+# reachable                        |  可达
+# rebase                           |  变基
+# ref                              |  引用
+# reflog                           |  引用日志
+# refmap                           |  引用映射
+# refspec                          |  引用规格
+# regular file                     |  普通文件
+# remote                           |  远程，远程仓库
+# remote-tracking branch           |  远程跟踪分支
+# replay                           |  重放
+# repo                             |  仓库
+# repository                       |  仓库
+# resolve                          |  （冲突）解决
+# revert                           |  还原
+# revision                         |  版本
+# rewind                           |  回退
+# SCM                              |  源代码管理（工具）
+# SHA-1                            |  SHA-1（安全哈希算法1）
+# shallow repository               |  浅（克隆）仓库
+# signed tag                       |  签名标签
+# smart HTTP protocol              |  智能 HTTP 协议
+# squash                           |  挤压
+# stack                            |  栈
+# stage                            |  n. 暂存区（即索引）; v. 暂存
+# stale                            |  过期的
+# stash                            |  n. 储藏区; v. 储藏
+# submodule                        |  子模组
+# symref                           |  符号引用
+# tag                              |  n. 标签; v. 打标签
+# tag object                       |  标签对象
+# tagger                           |  打标签者
+# topic branch                     |  主题分支
+# track                            |  跟踪
+# trailer                          |  尾注
+# tree                             |  树（工作区或树对象）
+# tree object                      |  树对象
+# tree-ish (also treeish)          |  树对象（或可以解析为一树对象）
+# unmerged index                   |  未合并索引
+# unpack                           |  解包
+# unreachable object               |  不可达对象
+# unstage                          |  取消暂存
+# upstream                         |  上游（分支/仓库）
+# working tree/worktree            |  工作区
 #
-#  Preferred Chinese Terms
+# Preferred Chinese Terms
 #
-#   - 默认 (not 缺省)
-#   - 其他 (not 其它)
-#   - 作为 (not 做为)
-#   - 当作 (not 当做)
-#   - 登录 (not 登陆)
-#   - 账户 (not 帐户)
-#   - 密码 (not 口令)
-#   - 撤销 (not 撤消)
-#   - 吗？ (not 么？)   # 疑问助词
-#   - 无法 (not 不能)：客观。客观障碍、技术限制、物理规律，非主观
-#   - 不能 (not 无法)：主观。能力不足、规则限制、逻辑冲突、设计限制、意愿拒绝
+# - 默认 (not 缺省)
+# - 其他 (not 其它)
+# - 作为 (not 做为)
+# - 当作 (not 当做)
+# - 登录 (not 登陆)
+# - 账户 (not 帐户)
+# - 密码 (not 口令)
+# - 撤销 (not 撤消)
+# - 吗？ (not 么？)   # 疑问助词
+# - 无法 (not 不能)：客观。客观障碍、技术限制、物理规律，非主观
+# - 不能 (not 无法)：主观。能力不足、规则限制、逻辑冲突、设计限制、意愿拒绝
 #
+# Yi-Jyun Pan <pan93412@gmail.com>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: Git\n"
 "Report-Msgid-Bugs-To: Git Mailing List <git@vger.kernel.org>\n"
 "POT-Creation-Date: 2026-04-10 10:05+0800\n"
 "PO-Revision-Date: 2026-06-27 09:14+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"Last-Translator: Yi-Jyun Pan <pan93412@gmail.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://weblate.slat.org/"
 "projects/git-po/git-cli/zh_Hans/>\n"
 "Language: zh_CN\n"
