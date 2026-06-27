@@ -20,7 +20,7 @@
 # - Zhuang Ya <zhuangya AT me.com>
 #
 # Yi-Jyun Pan <pan93412@gmail.com>, 2021, 2022, 2023, 2024, 2025, 2026.
-# Kaiyang Wu <self@origincode.me>, 2022.
+# Kaiyang Wu <self@origincode.me>, 2022, 2026.
 # Lumynous <lumynou5.tw@gmail.com>, 2023, 2024, 2025, 2026.
 # Kisaragi Hiu <mail@kisaragi-hiu.com>, 2024, 2026.
 # Ngoo Ka-iu <willy04wu69@gmail.com>, 2024, 2026.
@@ -33,7 +33,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: Git Mailing List <git@vger.kernel.org>\n"
 "POT-Creation-Date: 2026-06-26 12:08+0800\n"
 "PO-Revision-Date: 2026-06-27 09:15+0000\n"
-"Last-Translator: Ngoo Ka-iu <willy04wu69@gmail.com>\n"
+"Last-Translator: Kaiyang Wu <self@origincode.me>\n"
 "Language-Team: Chinese (Traditional Han script) <https://weblate.slat.org/"
 "projects/git-po/git-cli/zh_Hant/>\n"
 "Language: zh_TW\n"
