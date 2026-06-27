@@ -31,8 +31,8 @@ msgstr ""
 "Project-Id-Version: Git\n"
 "Report-Msgid-Bugs-To: Git Mailing List <git@vger.kernel.org>\n"
 "POT-Creation-Date: 2026-06-26 12:08+0800\n"
-"PO-Revision-Date: 2026-06-27 09:14+0000\n"
-"Last-Translator: Lumynous <lumynou5.tw@gmail.com>\n"
+"PO-Revision-Date: 2026-06-27 09:15+0000\n"
+"Last-Translator: Yi-Jyun Pan <pan93412@gmail.com>\n"
 "Language-Team: Chinese (Traditional Han script) <https://weblate.slat.org/"
 "projects/git-po/git-cli/zh_Hant/>\n"
 "Language: zh_TW\n"
@@ -1047,8 +1047,7 @@ msgstr "無法在修補檔的 %s:%d 處找到檔案名稱"
 #: apply.c
 #, c-format
 msgid "git apply: bad git-diff - expected /dev/null, got %s at %s:%d"
-msgstr ""
-"git apply：無效的 git-diff — 應為 /dev/null，但在 %2$s:%3$d 處得到 %1$s"
+msgstr "git apply：無效的 git-diff — 應為 /dev/null，但在 %2$s:%3$d 處得到 %1$s"
 
 #: apply.c
 #, c-format
@@ -1108,8 +1107,7 @@ msgid ""
 msgid_plural ""
 "git diff header lacks filename information when removing %d leading pathname "
 "components at %s:%d"
-msgstr[0] ""
-"移除 %d 個前導路徑部分後，git diff 標頭缺少檔案名稱資訊（位置：%s:%d）"
+msgstr[0] "移除 %d 個前導路徑部分後，git diff 標頭缺少檔案名稱資訊（位置：%s:%d）"
 
 #: apply.c
 #, c-format
@@ -3879,8 +3877,7 @@ msgstr "HEAD 指標不在 /refs/heads 中！"
 msgid ""
 "branch with --recurse-submodules can only be used if "
 "submodule.propagateBranches is enabled"
-msgstr ""
-"有 --recurse-submodules 的分支，只能在啟用 submodule.propagateBranches 時使用"
+msgstr "有 --recurse-submodules 的分支，只能在啟用 submodule.propagateBranches 時使用"
 
 #: builtin/branch.c
 msgid "--recurse-submodules can only be used to create branches"
@@ -4958,8 +4955,7 @@ msgstr "git checkout: --detach 不取路徑引數「%s」"
 msgid ""
 "git checkout: --ours/--theirs, --force and --merge are incompatible when\n"
 "checking out of the index."
-msgstr ""
-"git checkout: 從索引簽出時，--ours/--theirs、--force 和 --merge 不相容。"
+msgstr "git checkout: 從索引簽出時，--ours/--theirs、--force 和 --merge 不相容。"
 
 #: builtin/checkout.c
 msgid "you must specify path(s) to restore"
@@ -5031,8 +5027,8 @@ msgid ""
 "git clean [-d] [-f] [-i] [-n] [-q] [-e <pattern>] [-x | -X] [--] "
 "[<pathspec>...]"
 msgstr ""
-"git clean [-d] [-f] [-i] [-n] [-q] [-e <pattern>] [-x | -X] [--] "
-"[<pathspec>...]"
+"git clean [-d] [-f] [-i] [-n] [-q] [-e <pattern>] [-x | -X] [--] [<pathspec>"
+"...]"
 
 #: builtin/clean.c builtin/sparse-checkout.c
 #, c-format
@@ -5654,10 +5650,10 @@ msgid ""
 "                       <split-options>"
 msgstr ""
 "git commit-graph write [--object-dir <dir>] [--append]\n"
-"                       [--split[=<strategy>]] [--reachable | --stdin-packs | "
-"--stdin-commits]\n"
-"                       [--changed-paths] [--[no-]max-new-filters <n>] [--"
-"[no-]progress]\n"
+"                       [--split[=<strategy>]] [--reachable | --stdin-packs "
+"| --stdin-commits]\n"
+"                       [--changed-paths] [--[no-]max-new-filters <n>] [--[no-"
+"]progress]\n"
 "                       <split-options>"
 
 #: builtin/commit-graph.c builtin/fetch.c builtin/gc.c builtin/log.c
@@ -8460,8 +8456,7 @@ msgstr "檢測到多分支，和 --set-upstream 不相容"
 msgid ""
 "could not set upstream of HEAD to '%s' from '%s' when it does not point to "
 "any branch."
-msgstr ""
-"無法將 HEAD 的上游從「%2$s」設定為「%1$s」，因為 HEAD 沒有指向任何分支。"
+msgstr "無法將 HEAD 的上游從「%2$s」設定為「%1$s」，因為 HEAD 沒有指向任何分支。"
 
 #: builtin/fetch.c
 msgid "not setting upstream for a remote remote-tracking branch"
@@ -10036,8 +10031,7 @@ msgstr ""
 
 #: builtin/history.c
 msgid "git history reword <commit> [--dry-run] [--update-refs=(branches|head)]"
-msgstr ""
-"git history reword <commit> [--dry-run] [--update-refs=(branches|head)]"
+msgstr "git history reword <commit> [--dry-run] [--update-refs=(branches|head)]"
 
 #: builtin/history.c
 msgid ""
@@ -14015,8 +14009,8 @@ msgid ""
 "              [-u | -i]] [--index-output=<file>] [--no-sparse-checkout]\n"
 "              (--empty | <tree-ish1> [<tree-ish2> [<tree-ish3>]])"
 msgstr ""
-"git read-tree [(-m [--trivial] [--aggressive] | --reset | --"
-"prefix=<prefix>)\n"
+"git read-tree [(-m [--trivial] [--aggressive] | --reset | --prefix=<prefix>)"
+"\n"
 "              [-u | -i]] [--index-output=<file>] [--no-sparse-checkout]\n"
 "              (--empty | <tree-ish1> [<tree-ish2> [<tree-ish3>]])"
 
@@ -16897,8 +16891,8 @@ msgid ""
 "pass a leading slash before paths such as '%s' if you want a single file "
 "(see NON-CONE PROBLEMS in the git-sparse-checkout manual)."
 msgstr ""
-"若您想要單一檔案，請在目錄前打上斜線，如「%s」（見 git-sparse-checkout 手冊"
-"〈NON-CONE PROBLEMS〉一節）。"
+"若您想要單一檔案，請在目錄前打上斜線，如「%s」（見 git-sparse-checkout 手冊〈"
+"NON-CONE PROBLEMS〉一節）。"
 
 #: builtin/sparse-checkout.c
 msgid "git sparse-checkout add [--skip-checks] (--stdin | <patterns>)"
@@ -16978,8 +16972,7 @@ msgstr "使用 NUL 字元終止輸入和輸出檔案"
 
 #: builtin/sparse-checkout.c
 msgid "when used with --rules-file interpret patterns as cone mode patterns"
-msgstr ""
-"與 --rules-file 搭配使用時，將 patterns (模式) 解釋為 cone 模式的 patterns"
+msgstr "與 --rules-file 搭配使用時，將 patterns (模式) 解釋為 cone 模式的 patterns"
 
 #: builtin/sparse-checkout.c
 msgid "use patterns in <file> instead of the current ones."
@@ -16994,8 +16987,8 @@ msgid ""
 "git stash show [-u | --include-untracked | --only-untracked] [<diff-"
 "options>] [<stash>]"
 msgstr ""
-"git stash show [-u | --include-untracked | --only-untracked] [<diff-"
-"options>] [<stash>]"
+"git stash show [-u | --include-untracked | --only-untracked] [<diff-options>"
+"] [<stash>]"
 
 #: builtin/stash.c
 msgid "git stash drop [-q | --quiet] [<stash>]"
@@ -17032,8 +17025,8 @@ msgid ""
 msgstr ""
 "git stash [push] [-p | --patch] [-S | --staged] [-k | --[no-]keep-index] [-q "
 "| --quiet]\n"
-"          [-u | --include-untracked] [-a | --all] [(-m | --message) "
-"<message>]\n"
+"          [-u | --include-untracked] [-a | --all] [(-m | --message) <message>"
+"]\n"
 "          [--pathspec-from-file=<file> [--pathspec-file-nul]]\n"
 "          [--] [<pathspec>...]"
 
@@ -17043,8 +17036,8 @@ msgid ""
 "--quiet]\n"
 "          [-u | --include-untracked] [-a | --all] [<message>]"
 msgstr ""
-"git stash save [-p | --patch] [-S | --staged] [-k | --[no-]keep-index] [-q | "
-"--quiet]\n"
+"git stash save [-p | --patch] [-S | --staged] [-k | --[no-]keep-index] [-q "
+"| --quiet]\n"
 "          [-u | --include-untracked] [-a | --all] [<message>]"
 
 #: builtin/stash.c
@@ -17436,8 +17429,8 @@ msgid ""
 "ensure it is set, for example by running something like: 'git config "
 "submodule.%s.gitdir .git/modules/%s'"
 msgstr ""
-"無法為「submodule.%s.gitdir」設定有效的預設組態。請確定是否設定完成，舉例來"
-"說，可以執行類似這樣的命令進行設定：「git config submodule.%s.gitdir .git/"
+"無法為「submodule.%s.gitdir」設定有效的預設組態。請確定是否設定完成，舉例來說"
+"，可以執行類似這樣的命令進行設定：「git config submodule.%s.gitdir .git/"
 "modules/%s」"
 
 #: builtin/submodule--helper.c
@@ -17598,8 +17591,7 @@ msgstr "git submodule sync [--quiet] [--recursive] [<path>]"
 msgid ""
 "Submodule work tree '%s' contains a .git directory. This will be replaced "
 "with a .git file by using absorbgitdirs."
-msgstr ""
-"子模組工作區「%s」內有 .git 目錄。使用 absorbgitdirs 會將其替換為 .git 檔案。"
+msgstr "子模組工作區「%s」內有 .git 目錄。使用 absorbgitdirs 會將其替換為 .git 檔案。"
 
 #: builtin/submodule--helper.c
 #, c-format
@@ -17929,8 +17921,8 @@ msgid ""
 msgstr ""
 "git submodule [--quiet] update [--init [--filter=<filter-spec>]] [--remote] "
 "[-N|--no-fetch] [-f|--force] [--checkout|--merge|--rebase] [--[no-]recommend-"
-"shallow] [--reference <repository>] [--recursive] [--[no-]single-branch] "
-"[--] [<path>...]"
+"shallow] [--reference <repository>] [--recursive] [--[no-]single-branch] [--"
+"] [<path>...]"
 
 #: builtin/submodule--helper.c submodule.c
 msgid "Failed to resolve HEAD as a valid ref."
@@ -29323,8 +29315,7 @@ msgstr ""
 msgid ""
 "enabling extensions.submodulePathConfig might fix the following error, if "
 "it's not already enabled."
-msgstr ""
-"如果尚未啟用 extensions.submodulePathConfig，啟用這個選項可能會修復以下錯誤。"
+msgstr "如果尚未啟用 extensions.submodulePathConfig，啟用這個選項可能會修復以下錯誤。"
 
 #: submodule.c
 #, c-format
